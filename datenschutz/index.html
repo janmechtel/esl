@@ -1,0 +1,1637 @@
+<!doctype html >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de"
+      class="">
+<head>
+    <meta charset="utf-8">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    window._currentDevice = 'desktop';
+    window.Parameters = window.Parameters || {
+        HomeUrl: 'http://www.einstrahlendesland.de/',
+
+        AccountUUID: 'e5fc8128a3064ecb9eb63e7f7551be49',
+
+        SystemID: '1AND1_EU_PROD',
+        SiteAlias: '71f4d987307d4a71adfb410c2d30359c',
+        SiteType: atob('RFVEQU9ORQ=='),
+        PublicationDate: 'Tue Mar 10 10:32:57 UTC 2026',
+        ExternalUid: '39c0f40d-42a7-4786-86c9-6d04c3a2af7d',
+        IsSiteMultilingual: false,
+        InitialPostAlias: '',
+        InitialPostPageUuid: '',
+        InitialDynamicItem: '',
+        DynamicPageInfo: {
+            isDynamicPage: false,
+            base64JsonRowData: 'null',
+        },
+        InitialPageAlias: 'datenschutz',
+        InitialPageUuid: 'a9b37d0f151d4216b2d008656d3b7fdf',
+        InitialPageId: '705411733',
+        InitialEncodedPageAlias: 'ZGF0ZW5zY2h1dHo=',
+        InitialHeaderUuid: 'fe4207ecf50148aa89475dce54d4c469',
+        CurrentPageUrl: '',
+        IsCurrentHomePage: false,
+        AllowAjax: false,
+        AfterAjaxCommand: null,
+        HomeLinkText: 'Back To Home',
+        UseGalleryModule: false,
+        CurrentThemeName: 'Layout Theme',
+        ThemeVersion: '500000',
+        DefaultPageAlias: '',
+        RemoveDID: true,
+        WidgetStyleID: null,
+        IsHeaderFixed: true,
+        IsHeaderSkinny: true,
+        IsBfs: true,
+        StorePageAlias: 'null',
+        StorePagesUrls: 'e30=',
+        IsNewStore: 'false',
+        StorePath: '',
+        StoreId: 'null',
+        StoreVersion: 0,
+        StoreBaseUrl: '',
+        StoreCleanUrl: true,
+        StoreDisableScrolling: true,
+        IsStoreSuspended: false,
+        HasCustomDomain: true,
+        SimpleSite: false,
+        showCookieNotification: true,
+        cookiesNotificationMarkup: ' <div> <p class=\"rteBlock\">Diese Webseite verwendet Cookies, um Ihnen ein optimales Online-Erlebnis bieten zu k&ouml;nnen. Durch die Nutzung dieser Webseite erkl&auml;ren Sie sich mit der Verwendung von Cookies einverstanden. <a value=\"http:\/\/einstrahlendesland.de\/datenschutz\" type=\"url\" href=\"http:\/\/einstrahlendesland.de\/datenschutz\" data-runtime-url=\"http:\/\/einstrahlendesland.de\/datenschutz\">Mehr Infos.<\/a> \n<\/p> \n<\/div> \n',
+        translatedPageUrl: '',
+        isFastMigrationSite: false,
+        sidebarPosition: 'NA',
+        currentLanguage: 'de',
+        currentLocale: 'de',
+        NavItems: '{}',
+        errors: {
+            general: 'There was an error connecting to the page.<br/> Make sure you are not offline.',
+            password: 'Incorrect name/password combination',
+            tryAgain: 'Try again'
+        },
+        NavigationAreaParams: {
+            ShowBackToHomeOnInnerPages: true,
+            NavbarSize: 4,
+            NavbarLiveHomePage: 'http://www.einstrahlendesland.de/',
+            BlockContainerSelector: '.dmBody',
+            NavbarSelector: '#dmNav:has(a)',
+            SubNavbarSelector: '#subnav_main'
+        },
+        hasCustomCode: false,
+        planID: '2799',
+        customTemplateId: 'null',
+        siteTemplateId: 'null',
+        productId: 'DM_DIRECT',
+        disableTracking: false,
+        pageType: 'PRIVACY_PAGE',
+        isRuntimeServer: true,
+        isInEditor: false,
+        hasNativeStore: false,
+        defaultLang: 'de',
+        hamburgerMigration: null,
+        isFlexSite: false
+    };
+
+    window.Parameters.LayoutID = {};
+    window.Parameters.LayoutID[window._currentDevice] = 6;
+    window.Parameters.LayoutVariationID = {};
+    window.Parameters.LayoutVariationID[window._currentDevice] = 5;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Injecting site-wide to the head -->
+
+
+
+
+<!-- End Injecting site-wide to the head -->
+
+<!-- Inject secured cdn script -->
+
+
+<!-- ========= Meta Tags ========= -->
+<!-- PWA settings -->
+<script>
+    function toHash(str) {
+        var hash = 5381, i = str.length;
+        while (i) {
+            hash = hash * 33 ^ str.charCodeAt(--i)
+        }
+        return hash >>> 0
+    }
+</script>
+<script>
+    (function (global) {
+    //const cacheKey = global.cacheKey;
+    const isOffline = 'onLine' in navigator && navigator.onLine === false;
+    const hasServiceWorkerSupport = 'serviceWorker' in navigator;
+    if (isOffline) {
+        console.log('offline mode');
+    }
+    if (!hasServiceWorkerSupport) {
+        console.log('service worker is not supported');
+    }
+    if (hasServiceWorkerSupport && !isOffline) {
+        window.addEventListener('load', function () {
+            const serviceWorkerPath = '/runtime-service-worker.js?v=3';
+            navigator.serviceWorker
+                .register(serviceWorkerPath, { scope: './' })
+                .then(
+                    function (registration) {
+                        // Registration was successful
+                        console.log(
+                            'ServiceWorker registration successful with scope: ',
+                            registration.scope
+                        );
+                    },
+                    function (err) {
+                        // registration failed :(
+                        console.log('ServiceWorker registration failed: ', err);
+                    }
+                )
+                .catch(function (err) {
+                    console.log(err);
+                });
+        });
+
+        // helper function to refresh the page
+        var refreshPage = (function () {
+            var refreshing;
+            return function () {
+                if (refreshing) return;
+                // prevent multiple refreshes
+                var refreshkey = 'refreshed' + location.href;
+                var prevRefresh = localStorage.getItem(refreshkey);
+                if (prevRefresh) {
+                    localStorage.removeItem(refreshkey);
+                    if (Date.now() - prevRefresh < 30000) {
+                        return; // dont go into a refresh loop
+                    }
+                }
+                refreshing = true;
+                localStorage.setItem(refreshkey, Date.now());
+                console.log('refereshing page');
+                window.location.reload();
+            };
+        })();
+
+        function messageServiceWorker(data) {
+            return new Promise(function (resolve, reject) {
+                if (navigator.serviceWorker.controller) {
+                    var worker = navigator.serviceWorker.controller;
+                    var messageChannel = new MessageChannel();
+                    messageChannel.port1.onmessage = replyHandler;
+                    worker.postMessage(data, [messageChannel.port2]);
+                    function replyHandler(event) {
+                        resolve(event.data);
+                    }
+                } else {
+                    resolve();
+                }
+            });
+        }
+    }
+})(window);
+</script>
+<!-- Add manifest -->
+<!-- End PWA settings -->
+
+
+
+<link rel="canonical" href="datenschutz.html">
+
+<meta id="view" name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!--Add favorites icons-->
+
+<link rel="apple-touch-icon"
+      href="https://cdn.website-editor.net/71f4d987307d4a71adfb410c2d30359c/dms3rep/multi/Titelbild.jpg"/>
+
+<link rel="icon" type="image/x-icon" href="../cdn.website-editor.net/71f4d987307d4a71adfb410c2d30359c/site_favicon_16_1644392547926.ico"/>
+
+<!-- End favorite icons -->
+<link rel="preconnect" href="https://le-cdn.website-editor.net/"/>
+
+
+
+<!-- render the required CSS and JS in the head section -->
+<script id='d-js-dmapi'>
+    window.SystemID = '1AND1_EU_PROD';
+
+    if (!window.dmAPI) {
+        window.dmAPI = {
+            registerExternalRuntimeComponent: function () {
+            },
+            getCurrentDeviceType: function () {
+                return window._currentDevice;
+            },
+            runOnReady: (ns, fn) => {
+                const safeFn = dmAPI.toSafeFn(fn);
+                ns = ns || 'global_' + Math.random().toString(36).slice(2, 11);
+                const eventName = 'afterAjax.' + ns;
+
+                if (document.readyState === 'complete') {
+                    $.DM.events.off(eventName).on(eventName, safeFn);
+                    setTimeout(function () {
+                        safeFn({
+                            isAjax: false,
+                        });
+                    }, 0);
+                } else {
+                    window?.waitForDeferred?.('dmAjax', () => {
+                        $.DM.events.off(eventName).on(eventName, safeFn);
+                        safeFn({
+                            isAjax: false,
+                        });
+                    });
+                }
+            },
+            toSafeFn: (fn) => {
+                if (fn?.safe) {
+                    return fn;
+                }
+                const safeFn = function (...args) {
+                    try {
+                        return fn?.apply(null, args);
+                    } catch (e) {
+                        console.log('function failed ' + e.message);
+                    }
+                };
+                safeFn.safe = true;
+                return safeFn;
+            }
+        };
+    }
+
+    if (!window.requestIdleCallback) {
+        window.requestIdleCallback = function (fn) {
+            setTimeout(fn, 0);
+        }
+    }
+</script>
+
+<!-- loadCSS function header.jsp-->
+
+
+
+
+
+
+<script id="d-js-load-css">
+/**
+ * There are a few <link> tags with CSS resource in them that are preloaded in the page
+ * in each of those there is a "onload" handler which invokes the loadCSS callback
+ * defined here.
+ * We are monitoring 3 main CSS files - the runtime, the global and the page.
+ * When each load we check to see if we can append them all in a batch. If threre
+ * is no page css (which may happen on inner pages) then we do not wait for it
+ */
+(function () {
+  let cssLinks = {};
+  function loadCssLink(link) {
+    link.onload = null;
+    link.rel = "stylesheet";
+    link.type = "text/css";
+  }
+  
+    function checkCss() {
+      const pageCssLink = document.querySelector("[id*='CssLink']");
+      const widgetCssLink = document.querySelector("[id*='widgetCSS']");
+
+        if (cssLinks && cssLinks.runtime && cssLinks.global && (!pageCssLink || cssLinks.page) && (!widgetCssLink || cssLinks.widget)) {
+            const storedRuntimeCssLink = cssLinks.runtime;
+            const storedPageCssLink = cssLinks.page;
+            const storedGlobalCssLink = cssLinks.global;
+            const storedWidgetCssLink = cssLinks.widget;
+
+            storedGlobalCssLink.disabled = true;
+            loadCssLink(storedGlobalCssLink);
+
+            if (storedPageCssLink) {
+                storedPageCssLink.disabled = true;
+                loadCssLink(storedPageCssLink);
+            }
+
+            if(storedWidgetCssLink) {
+                storedWidgetCssLink.disabled = true;
+                loadCssLink(storedWidgetCssLink);
+            }
+
+            storedRuntimeCssLink.disabled = true;
+            loadCssLink(storedRuntimeCssLink);
+
+            requestAnimationFrame(() => {
+                setTimeout(() => {
+                    storedRuntimeCssLink.disabled = false;
+                    storedGlobalCssLink.disabled = false;
+                    if (storedPageCssLink) {
+                      storedPageCssLink.disabled = false;
+                    }
+                    if (storedWidgetCssLink) {
+                      storedWidgetCssLink.disabled = false;
+                    }
+                    // (SUP-4179) Clear the accumulated cssLinks only when we're
+                    // sure that the document has finished loading and the document 
+                    // has been parsed.
+                    if(document.readyState === 'interactive') {
+                      cssLinks = null;
+                    }
+                }, 0);
+            });
+        }
+    }
+  
+
+  function loadCSS(link) {
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var noCSS = !!urlParams.get("nocss");
+      var cssTimeout = urlParams.get("cssTimeout") || 0;
+
+      if (noCSS) {
+        return;
+      }
+      if (link.href && link.href.includes("d-css-runtime")) {
+        cssLinks.runtime = link;
+        checkCss();
+      } else if (link.id === "siteGlobalCss") {
+        cssLinks.global = link;
+        checkCss();
+      } 
+      
+      else if (link.id && link.id.includes("CssLink")) {
+        cssLinks.page = link;
+        checkCss();
+      } else if (link.id && link.id.includes("widgetCSS")) {
+        cssLinks.widget = link;
+        checkCss();
+      }
+      
+      else {
+        requestIdleCallback(function () {
+          window.setTimeout(function () {
+            loadCssLink(link);
+          }, parseInt(cssTimeout, 10));
+        });
+      }
+    } catch (e) {
+      throw e
+    }
+  }
+  window.loadCSS = window.loadCSS || loadCSS;
+})();
+</script>
+
+
+
+<script data-role="deferred-init" type="text/javascript">
+    /* usage: window.getDeferred(<deferred name>).resolve() or window.getDeferred(<deferred name>).promise.then(...)*/
+    function Def() {
+        this.promise = new Promise((function (a, b) {
+            this.resolve = a, this.reject = b
+        }).bind(this))
+    }
+
+    const defs = {};
+    window.getDeferred = function (a) {
+        return null == defs[a] && (defs[a] = new Def), defs[a]
+    }
+    window.waitForDeferred = function (b, a, c) {
+        let d = window?.getDeferred?.(b);
+        d
+            ? d.promise.then(a)
+            : c && ["complete", "interactive"].includes(document.readyState)
+                ? setTimeout(a, 1)
+                : c
+                    ? document.addEventListener("DOMContentLoaded", a)
+                    : console.error(`Deferred  does not exist`);
+    };
+</script>
+<style id="forceCssIncludes">
+    /* This file is auto-generated from a `scss` file with the same name */
+
+.videobgwrapper{overflow:hidden;position:absolute;z-index:0;width:100%;height:100%;top:0;left:0;pointer-events:none;border-radius:inherit}.videobgframe{position:absolute;width:101%;height:100%;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);object-fit:fill}#dm video.videobgframe{margin:0}@media (max-width:767px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:80vh}}@media (min-width:1025px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}@media (min-width:768px) and (max-width:1024px){.responsiveTablet .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}#dm [data-show-on-page-only]{display:none!important}#dmRoot div.stickyHeaderFix div.site_content{margin-top:0!important}#dmRoot div.stickyHeaderFix div.hamburger-header-container{position:relative}
+    
+
+</style>
+<style id="cssVariables" type="text/css">
+    
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Google Fonts Include -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- loadCSS function fonts.jsp-->
+
+
+
+<link type="text/css" rel="stylesheet" href="https://cdn.website-editor.net/fonts/css2?family=Lusitana:ital,wght@0,400;0,700&family=Arimo:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Alike:ital,wght@0,400&family=Alfa+Slab+One:ital,wght@0,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&subset=latin-ext&display=block"  />
+
+
+
+
+
+<!-- RT CSS Include d-css-runtime-desktop-one-package-structured-global-->
+<link rel="stylesheet" type="text/css" href="../static-cdn.website-editor.net/mnlt/production/6259/_dm/s/rt/dist/css/d-css-runtime-desktop-one-package-structured-global.min.css" />
+
+<!-- End of RT CSS Include -->
+
+<link type="text/css" rel="stylesheet" href="../cdn.website-editor.net/WIDGET_CSS/0176d524d75ad4164e2f7df429a824be.css" id="widgetCSS" />
+
+<!-- Support `img` size attributes -->
+<style>img[width][height] {
+  height: auto;
+}</style>
+
+<!-- Support showing sticky element on page only -->
+<style>
+  body[data-page-alias="datenschutz"] #dm [data-show-on-page-only="datenschutz"] {
+    display: block !important;
+  }
+</style>
+
+<!-- This is populated in Ajax navigation -->
+<style id="pageAdditionalWidgetsCss" type="text/css">
+</style>
+
+
+
+
+<!-- Site CSS -->
+<link type="text/css" rel="stylesheet" href="../cdn.website-editor.net/71f4d987307d4a71adfb410c2d30359c/files/71f4d987307d4a71adfb410c2d30359c_1.min.css%3Fv=1032.css" id="siteGlobalCss" />
+
+
+
+<style id="customWidgetStyle" type="text/css">
+    
+</style>
+<style id="innerPagesStyle" type="text/css">
+    
+</style>
+
+
+<style
+        id="additionalGlobalCss" type="text/css"
+>
+</style>
+
+<style id="pagestyle" type="text/css">
+    *#dm *.dmBody a.span.textonly
+{
+	color:rgb(255, 255, 255) !important;
+}
+*#dm *.dmBody a.span.textonly
+{
+	color:rgb(255, 255, 255) !important;
+}
+*#dm *.dmBody div.dmform-error
+{
+	font-style:normal !important;
+}
+*#dm *.dmBody div.dmforminput textarea
+{
+	font-style:italic !important;
+}
+*#dm *.dmBody div.dmforminput *.fileUploadLink
+{
+	font-style:italic !important;
+}
+*#dm *.dmBody div.checkboxwrapper span
+{
+	font-style:italic !important;
+}
+*#dm *.dmBody div.radiowrapper span
+{
+	font-style:italic !important;
+}
+*#dm *.dmBody div.u_1083860406
+{
+	line-height:initial !important;
+}
+*#dm *.dmBody div.u_1243667655
+{
+	background-color:rgba(0, 0, 0, 0) !important;
+}
+*.dmFooterContainer
+{
+	display:none !important;
+}
+*#dm *.dmBody div.u_1071988481 hr
+{
+	height:0px !important;
+	min-height:0px !important;
+	background-color:transparent !important;
+	background:none !important;
+	background-size:initial !important;
+	border-top-width:0px !important;
+	border-color:currentColor !important;
+	border-width:1px !important;
+	border-top-style:solid !important;
+}
+
+</style>
+
+<style id="pagestyleDevice" type="text/css">
+    *#dm *.d-page-1716942098 DIV.dmInner
+{
+	background-repeat:no-repeat !important;
+	background-size:cover !important;
+	background-attachment:fixed !important;
+	background-position:50% 50% !important;
+}
+*#dm *.d-page-1716942098 DIV#dmSlideRightNavRight
+{
+	background-repeat:no-repeat !important;
+	background-image:none !important;
+	background-size:cover !important;
+	background-attachment:fixed !important;
+	background-position:50% 50% !important;
+}
+*#dm *.dmBody h4.u_1303079183
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:calc(100% - 0px) !important;
+	margin-top:30px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:left !important;
+}
+*#dm *.dmBody h4.u_1127178348
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	max-width:calc(100% - 0px) !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:left !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	margin-top:28px !important;
+	margin-bottom:8px !important;
+}
+*#dm *.dmBody h4.u_1902293774
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	max-width:calc(100% - 0px) !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:left !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	margin-top:28px !important;
+	margin-bottom:8px !important;
+}
+*#dm *.dmBody h4.u_1970988313
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	max-width:calc(100% - 0px) !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:left !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	margin-top:10px !important;
+	margin-bottom:8px !important;
+}
+*#dm *.dmBody h4.u_1095182628
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	max-width:calc(100% - 0px) !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:left !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	margin-top:28px !important;
+	margin-bottom:8px !important;
+}
+*#dm *.dmBody h4.u_1507676094
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	max-width:calc(100% - 0px) !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:left !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	margin-top:28px !important;
+	margin-bottom:8px !important;
+}
+*#dm *.dmBody h4.u_1604837267
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	max-width:calc(100% - 0px) !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:left !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	margin-top:28px !important;
+	margin-bottom:8px !important;
+}
+*#dm *.dmBody h4.u_1943112316
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	max-width:calc(100% - 0px) !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:left !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	margin-top:28px !important;
+	margin-bottom:8px !important;
+}
+*#dm *.dmBody h4.u_1615284184
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	max-width:calc(100% - 0px) !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:left !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	margin-top:28px !important;
+	margin-bottom:8px !important;
+}
+*#dm *.dmBody h4.u_1059000972
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	max-width:calc(100% - 0px) !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:left !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	margin-top:28px !important;
+	margin-bottom:8px !important;
+}
+*#dm *.dmBody h4.u_1064661103
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	max-width:calc(100% - 0px) !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:left !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	margin-top:28px !important;
+	margin-bottom:8px !important;
+}
+*#dm *.dmBody h4.u_1144216550
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	max-width:calc(100% - 0px) !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:left !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	margin-top:28px !important;
+	margin-bottom:8px !important;
+}
+*#dm *.dmBody h4.u_1953255332
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	max-width:calc(100% - 0px) !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:left !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	margin-top:28px !important;
+	margin-bottom:8px !important;
+}
+*#dm *.dmBody h4.u_1651675547
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	max-width:calc(100% - 0px) !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:left !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	margin-top:9px !important;
+	margin-bottom:8px !important;
+}
+*#dm *.dmBody h4.u_1692181153
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	max-width:calc(100% - 0px) !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:left !important;
+	margin-top:28px !important;
+}
+*#dm *.dmBody h4.u_1489063923
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	max-width:calc(100% - 0px) !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:left !important;
+	margin-top:28px !important;
+}
+*#dm *.dmBody h4.u_1526418627
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	max-width:calc(100% - 0px) !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:left !important;
+	margin-top:28px !important;
+}
+*#dm *.dmBody div.u_1243667655
+{
+	margin-left:0px !important;
+	padding-top:138.5px !important;
+	padding-left:40px !important;
+	padding-bottom:138.5px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	padding-right:40px !important;
+	margin-right:0px !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	max-width:100% !important;
+	min-width:0 !important;
+	text-align:center !important;
+}
+*#dm *.dmBody div.u_1325460642
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	text-align:left !important;
+}
+*#dm *.dmBody div.u_1071988481
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	text-align:start !important;
+}
+*#dm *.dmBody h4.u_1219440013
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	max-width:calc(100% - 0px) !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:left !important;
+}
+
+</style>
+
+<!-- Flex Sections CSS -->
+
+
+
+
+
+
+
+<style id="globalFontSizeStyle" type="text/css">
+    .font-size-48, .size-48, .size-48 > font { font-size: 48px !important; }.font-size-16, .size-16, .size-16 > font { font-size: 16px !important; }.font-size-15, .size-15, .size-15 > font { font-size: 15px !important; }
+</style>
+<style id="pageFontSizeStyle" type="text/css">
+</style>
+
+
+
+
+<style id="hideAnimFix">
+  .dmDesktopBody:not(.editGrid) [data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) [data-anim-extended] {
+    visibility: hidden;
+  }
+
+  .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-extended] {
+    visibility: hidden !important;
+  }
+
+  #dmRoot:not(.editGrid) .flex-element [data-anim-extended] {
+    visibility: hidden;
+  }
+
+</style>
+
+
+
+
+<style id="fontFallbacks">
+    @font-face {
+  font-family: "Lusitana Fallback";
+  src: local('Arial');
+  ascent-override: 101.9286%;
+  descent-override: 36.3574%;
+  size-adjust: 93.7912%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Arimo Fallback";
+  src: local('Arial');
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Montserrat Fallback";
+  src: local('Arial');
+  ascent-override: 84.9466%;
+  descent-override: 22.0264%;
+  size-adjust: 113.954%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Rubik Fallback";
+  src: local('Arial');
+  ascent-override: 88.5654%;
+  descent-override: 23.6806%;
+  size-adjust: 105.5717%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "PT Sans Fallback";
+  src: local('Arial');
+  ascent-override: 104.2579%;
+  descent-override: 28.2664%;
+  size-adjust: 97.6425%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Alike Fallback";
+  src: local('Arial');
+  ascent-override: 96.9517%;
+  descent-override: 26.6026%;
+  size-adjust: 101.4938%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Alfa Slab One Fallback";
+  src: local('Arial');
+  ascent-override: 85.4761%;
+  descent-override: 27.4744%;
+  size-adjust: 121.2035%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Open Sans Fallback";
+  src: local('Arial');
+  ascent-override: 101.1768%;
+  descent-override: 27.7323%;
+  size-adjust: 105.6416%;
+  line-gap-override: 0%;
+ }
+</style>
+
+
+<!-- End render the required css and JS in the head section -->
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.einstrahlendesland.de/datenschutz">
+
+  <title>
+    Ein strahlendes Land
+  </title>
+  <meta name="keywords" content="Film, Dokumentarfilm, Radioaktivität, Umwelt, Atomenergie, Atomkraft"/>
+  <meta name="description" content="Ein strahlendes Land - Mit dem Geigerzähler durch Deutschland
+Film
+radioaktive Strahlung Orte"/>
+
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="Ein strahlendes Land"/>
+  <meta name="twitter:description" content="Ein strahlendes Land - Mit dem Geigerzähler durch Deutschland
+Film
+radioaktive Strahlung Orte"/>
+  <meta name="twitter:image" content="https://le-cdn.website-editor.net/71f4d987307d4a71adfb410c2d30359c/dms3rep/multi/opt/Filmplakat-1920w.jpg"/>
+  <meta property="og:description" content="Ein strahlendes Land - Mit dem Geigerzähler durch Deutschland
+Film
+radioaktive Strahlung Orte"/>
+  <meta property="og:title" content="Ein strahlendes Land"/>
+  <meta property="og:image" content="https://le-cdn.website-editor.net/71f4d987307d4a71adfb410c2d30359c/dms3rep/multi/opt/Filmplakat-1920w.jpg"/>
+
+
+
+
+<!-- SYS- MUFORDFfRVVfUFJPRA== -->
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body id="dmRoot" data-page-alias="datenschutz"  class="dmRoot dmDesktopBody fix-mobile-scrolling addCanvasBorder dmResellerSite mac dmLargeBody "
+      style="padding:0;margin:0;"
+      
+    >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========= Site Content ========= -->
+<div id="dm" class='dmwr'>
+    
+    <div class="dm_wrapper standard-var5 widgetStyle-3 standard">
+         <div dmwrapped="true" id="1901957768" class="dm-home-page" themewaschanged="true"> <div dmtemplateid="StandardLayoutMultiD" class="standardHeaderLayout dm-bfs dm-layout-sec hasAnimations dmPageBody d-page-1716942098 inputs-css-clean dmFreeHeader" id="dm-outer-wrapper" data-page-class="1716942098" data-soch="true" data-background-parallax-selector=".dmHomeSection1, .dmSectionParallex"> <div id="dmStyle_outerContainer" class="dmOuter"> <div id="dmStyle_innerContainer" class="dmInner"> <div class="dmLayoutWrapper standard-var dmStandardDesktop"> <div> <div id="iscrollBody"> <div id="site_content"> <div class="dmHeaderContainer fHeader d-header-wrapper"> <div id="hcontainer" class="u_hcontainer dmHeader p_hfcontainer" freeheader="true"> <div dm:templateorder="85" class="dmHeaderResp dmHeaderStack noSwitch" id="1709005236"> <div class="u_1945822334 dmRespRow" style="text-align: center;" id="1945822334"> <div class="dmRespColsWrapper" id="1531770931"> <div class="u_1437076231 dmRespCol small-12 medium-12 large-12" id="1437076231"> <span id="1187770996"></span> 
+ <div data-element-type="spacer" class="u_1517156694 dmSpacer" id="1517156694"></div> 
+ <h1 data-inject="home-At5row1Title" class="u_1179288028 dmNewParagraph" id="1179288028" data-element-type="paragraph" style="text-align: justify;"><span style="font-family:'PT Sans', 'PT Sans Fallback';"><span style="font-weight: 400;"><span style="font-weight: inherit;"><span style="font-weight: inherit;"><span style="font-weight: inherit;"><span style="font-weight: 400; font-size: 48px;"><span style="font-family:Rubik, 'Rubik Fallback';"><font class="lh-1 m-font-size-36 font-size-48">Ei<span style="font-weight: 400;"></span>n strahlendes Land</font></span><br/></span></span></span></span></span></span></h1> <div class="u_1079746567 dmDividerWrapper clearfix" data-element-type="dDividerId" data-layout="divider-style-1" data-widget-version="2" id="1079746567"><hr class="dmDivider" style="border-width:2px; border-top-style:solid; color:grey;" id="1264054290"/></div> 
+ <nav class="u_1284501632 effect-text-color main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="horizontal_nav_layout_2" layout-sub="submenu_horizontal_1" data-show-vertical-sub-items="HOVER" id="1284501632" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" navigation_id="" wr="false" icon="https://www.einstrahlendesland.de/true" surround="false" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="index.html" class="unifiednav__item  dmUDNavigationItem_00  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Home
+        " data-auto="page-text-style">Home<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="https://www.einstrahlendesland.de/der-film" class="unifiednav__item  dmUDNavigationItem_010101407278  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Der Film
+        " data-auto="page-text-style">Der Film<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="https://www.einstrahlendesland.de/trailer" class="unifiednav__item  dmUDNavigationItem_010101693920  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Trailer
+        " data-auto="page-text-style">Trailer<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="https://www.einstrahlendesland.de/kinotermine" class="unifiednav__item  dmUDNavigationItem_010101716434  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Kinotermine
+        " data-auto="page-text-style">Kinotermine<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="https://www.einstrahlendesland.de/presse" class="unifiednav__item  dmUDNavigationItem_010101819557  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Presse
+        " data-auto="page-text-style">Presse<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+ <div data-element-type="spacer" class="u_1789337129 dmSpacer" id="1789337129"></div> 
+ <div class="u_1734295359 align-center text-align-center dmSocialHub gapSpacing" id="1734295359" dmle_extension="social_hub" data-element-type="social_hub" wr="true" networks="" icon="https://www.einstrahlendesland.de/true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv "> <a href="https://vimeo.com/853165220" target="_blank" dm_dont_rewrite_url="true" aria-label="vimeo" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Vimeo&apos;)"> <span class="dmSocialVimeo dm-social-icons-vimeo oneIcon socialHubIcon style5" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="https://www.youtube.com/watch?v=roeuSHbuiQU" target="_blank" dm_dont_rewrite_url="true" aria-label="youtube" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Youtube&apos;)"> <span class="dmSocialYoutube dm-social-icons-youtube oneIcon socialHubIcon style5" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="mailto:info@einstrahlendesland.de" dm_dont_rewrite_url="true" aria-label="email" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Email&apos;)"> <span class="dmSocialEmail dm-social-icons-email oneIcon socialHubIcon style5" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow dmRespRowStable dmRespRowNoPadding dmPageTitleRow "> <div class="dmRespColsWrapper"> <div class="large-12 dmRespCol"> <div id="innerBar" class="innerBar lineInnerBar dmDisplay_None"> <div class="titleLine display_None"><hr/></div> 
+<!-- Page title is hidden in css for new responsive sites. It is left here only so we don't break old sites. Don't copy it to new layouts --> <div id="pageTitleText"> <div class="innerPageTitle">datenschutz</div> 
+</div> 
+ <div class="titleLine display_None"><hr/></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div dmwrapped="true" id="dmFirstContainer" class="dmBody u_dmStyle_template_datenschutz dm-home-page" themewaschanged="true"> <div id="allWrapper" class="allWrapper"><!-- navigation placeholders --> <div id="dm_content" class="dmContent" role="main"> <div dm:templateorder="170" class="dmHomeRespTmpl mainBorder dmRespRowsWrapper dmFullRowRespTmpl" id="1716942098"> <div class="u_1243667655 dmRespRow" style="text-align: center;" id="1243667655"> <div class="dmRespColsWrapper" id="1173148036"> <div class="dmRespCol small-12 medium-12 large-12 u_1620106714" id="1620106714"> <span id="1479169930"></span> 
+ <h4 class="dmNewParagraph u_1303079183" data-element-type="paragraph" id="1303079183" style="transition: none; display: block;"><span style="font-family:'Open Sans', 'Open Sans Fallback';"><span style="font-weight: 300;"><div><span class="lh-1 font-size-16" style="font-weight: inherit;">Einf&uuml;hrung</span></div></span></span></h4> <div class="dmNewParagraph" id="1133662932" style="transition: opacity 1s ease-in-out;"><div><span style="" class="lh-1 font-size-15">In diesen Datenschutzbestimmungen stellen wir unsere Vorgehensweise bez&uuml;glich der von Benutzern erfassten Daten, die auf unsere Webseite unter einstrahlendesland.de (&bdquo;<span style="font-weight: 700;">Webseite</span>&ldquo;) zugreifen oder uns auf andere Weise personenbezogene Daten bereitstellen (gemeinsam: &bdquo;<span style="font-weight: 700;">Benutzer</span>&ldquo;), dar.</span></div><div><span style="" class="lh-1 font-size-15"><br/></span></div><div><span style="" class="lh-1 font-size-15">Zust&auml;ndige Beh&ouml;rde im Sinne der Datenschutz-Grundverordnung (DSGVO): Landesbeauftragte f&uuml;r Datenschutz und Informationsfreiheit Nordrhein-Westfalen, Kavalleriestra&szlig;e 2-4, 40213 D&uuml;sseldorf.</span></div></div> <h4 class="u_1692181153 dmNewParagraph" data-element-type="paragraph" id="1692181153" style="transition: none; display: block;"><span style="font-family:'Open Sans', 'Open Sans Fallback';"><span style="font-weight: 300;"><div><span class="lh-1 font-size-16" style="font-weight: inherit;">Benutzerrechte</span></div></span></span></h4> <div class="dmNewParagraph" id="1287197640"><div><span style="" class="lh-1 font-size-15">Sie haben folgende Rechte:&nbsp;</span></div><div><ol class="innerList defaultList"><li><span style="" class="lh-1 font-size-15">Eine Best&auml;tigung, ob und inwieweit Ihre personenbezogenen Daten verwendet und verarbeitet werden, sowie den Zugriff auf die &uuml;ber Sie gespeicherten personenbezogenen Daten und zus&auml;tzliche Informationen anfordern&nbsp;<br/></span></li><li><span style="" class="lh-1 font-size-15">Eine Kopie der personenbezogenen Daten, die Sie uns freiwillig bereitgestellt haben, in einem strukturierten, g&auml;ngigen und maschinenlesbaren Format anfordern&nbsp;<br/></span></li><li><span style="" class="lh-1 font-size-15">Eine Berichtigung der personenbezogenen Daten, die wir von Ihnen gespeichert haben, anfordern<br/></span></li><li><span style="" class="lh-1 font-size-15">Das L&ouml;schen Ihrer personenbezogenen Daten beantragen&nbsp;<br/></span></li><li><span style="" class="lh-1 font-size-15">Der Verarbeitung Ihrer personenbezogenen Daten durch uns widersprechen&nbsp;<br/></span></li><li><span style="" class="lh-1 font-size-15">Die Einschr&auml;nkung der Verarbeitung Ihrer personenbezogenen Daten durch uns beantragen<br/></span></li><li><span style="" class="lh-1 font-size-15">Eine Beschwerde bei einer Aufsichtsbeh&ouml;rde einreichen<br/></span></li></ol></div><div><span style="" class="lh-1 font-size-15"><br/></span></div><div><span style="" class="lh-1 font-size-15">Beachten Sie jedoch, dass diese Rechte nicht uneingeschr&auml;nkt gelten, sondern unseren eigenen rechtm&auml;&szlig;igen Interessen sowie beh&ouml;rdlichen Vorschriften unterliegen.&nbsp;</span></div><div><span style="" class="lh-1 font-size-15"><br/></span></div><div><span style="" class="lh-1 font-size-15">Wenn Sie eines der hier aufgef&uuml;hrten Rechte in Anspruch nehmen m&ouml;chten oder weitere Informationen w&uuml;nschen, wenden Sie sich an unseren Datenschutzbeauftragten Marvin Oppong unter: info@einstrahlendesland.de, Postfach 7389, 53073 Bonn, Telefon: +49 228 2279910.</span></div></div> <h4 class="u_1489063923 dmNewParagraph" data-element-type="paragraph" id="1489063923" style="transition: none; display: block;"><div><span style="font-family:'Open Sans', 'Open Sans Fallback';"><span style="font-weight: 300;"><span class="lh-1 font-size-16" style="font-weight: inherit;">Speicherung</span></span></span></div></h4> <div class="dmNewParagraph" id="1247623933"><div><span style="" class="lh-1 font-size-15">Wir speichern Ihre personenbezogenen Daten so lange, wie es f&uuml;r die Bereitstellung unserer Services, die Einhaltung rechtlicher Verpflichtungen sowie die Beilegung von Streitigkeiten und die Durchsetzung unserer Richtlinien erforderlich ist. Die Aufbewahrungsfristen richten sich nach der Art der erfassten Daten und dem Zweck, f&uuml;r den diese Daten erfasst wurden, wobei sowohl die fallspezifischen Gegebenheiten als auch die Notwendigkeit ber&uuml;cksichtigt werden, veraltete, nicht genutzte Informationen baldm&ouml;glichst zu l&ouml;schen. Datens&auml;tze mit personenbezogenen Daten von Kunden, Dokumente &uuml;ber die Kontoeinrichtung, Mitteilungen und andere Daten speichern wir gem&auml;&szlig; geltender Gesetze und Vorschriften.&nbsp;</span></div><div><span style="" class="lh-1 font-size-15"><br/></span></div><div><span style="" class="lh-1 font-size-15">Wir k&ouml;nnen jederzeit und in unserem alleinigen Ermessen unvollst&auml;ndige oder unrichtige Daten korrigieren, vervollst&auml;ndigen oder entfernen.</span></div></div> <h4 class="u_1902293774 dmNewParagraph" data-element-type="paragraph" id="1902293774" style="transition: none; display: block;"><span style="font-family:'Open Sans', 'Open Sans Fallback';"><span style="font-weight: 300;"><div><span class="lh-1 font-size-16" style="font-weight: inherit;">Grundlage f&uuml;r die Datenerfassung&nbsp;</span></div></span></span></h4> <div class="dmNewParagraph" id="1443934047" style="transition: opacity 1s ease-in-out;"><div><span style="font-weight: 300;" class="lh-1 font-size-15">Die Verarbeitung Ihrer personenbezogenen Daten (d.&nbsp;h. jegliche Daten, die mit vertretbaren Mitteln eine Identifizierung Ihrer Person zulassen; &bdquo;<span style="font-weight: 700;">personenbezogene Daten</span>&ldquo;) erfolgt auf der Grundlage der Datenschutz-Grundverordnung sowie der sonstigen einschl&auml;gigen Datenschutzbestimmungen und ist erforderlich, umIhnen unsere Services bereitzustellen, vertragliche Verpflichtungen Ihnen gegen&uuml;ber nachzukommen, unser legitimes Interesse sch&uuml;tzen sowie rechtlichen und finanziellen Regulierungsverpflichtungen, denen wir unterworfen sind, nachkommen k&ouml;nnen.<div><br/></div><div>Durch die Nutzung dieser Webseite stimmen Sie der Erfassung, Speicherung, Verwendung, Offenlegung und sonstigen Nutzung Ihrer personenbezogenen Daten wie in diesen Datenschutzbestimmungen beschrieben zu.</div></span></div><div></div></div> <h4 class="u_1127178348 dmNewParagraph" data-element-type="paragraph" id="1127178348" style="transition: none; display: block;"><span style="font-family:'Open Sans', 'Open Sans Fallback';"><span style="font-weight: 300;"><div><span class="lh-1 font-size-16" style="font-weight: inherit;">Welche Daten werden erfasst?</span></div></span></span></h4> <div class="dmNewParagraph" id="1284811032"><div></div><div><span style="" class="lh-1 font-size-15">Wir erfassen zwei Arten von Daten und Informationen von Benutzern.&nbsp;</span></div><div></div><div><span style="" class="lh-1 font-size-15"><br/></span></div><div><span style="" class="lh-1 font-size-15">Zur ersten Kategorie geh&ouml;ren nicht identifizierende und nicht identifizierbare Benutzerdaten, die durch die Nutzung der Webseite bereitgestellt oder erfasst werden (&bdquo;<span style="font-weight: 700;">Nicht personenbezogene Daten</span>&rdquo;). Wir kennen die Identit&auml;t des Benutzers nicht, von dem nicht personenbezogene Daten erfasst wurden. Zu den nicht personenbezogenen Daten, die erfasst werden k&ouml;nnen, geh&ouml;ren aggregierte Nutzungsdaten und technische Daten, die von Ihrem Ger&auml;t &uuml;bermittelt werden, einschlie&szlig;lich bestimmter Informationen bez&uuml;glich Software und Hardware (z. B. auf dem Ger&auml;t verwendeter Browser und verwendetes Betriebssystem, Spracheinstellung, Zugriffszeit usw.). Anhand dieser Daten verbessern wir die Funktionalit&auml;t unserer Webseite. Wir k&ouml;nnen auch Daten &uuml;ber Ihre Aktivit&auml;t auf der Webseite erfassen (z. B. aufgerufene Seiten, Surfverhalten, Klicks, Aktionen usw.).</span></div><div><span style="" class="lh-1 font-size-15"><br/></span></div><div><span style="" class="lh-1 font-size-15">Zur zweiten Kategorie geh&ouml;ren <span style="font-weight: 700;">personenbezogene Daten</span> 
+, also Daten, die eine Einzelperson identifizieren oder durch angemessene Ma&szlig;nahmen identifizieren k&ouml;nnen. Zu solchen Daten geh&ouml;ren:</span></div><div><ul class="innerList defaultList" style="color: rgb(255, 0, 56);"><li style="color: rgb(0, 0, 0);"><span style="" class="lh-1 font-size-15">Ger&auml;tedaten: Wir erfassen personenbezogene Daten von Ihrem Ger&auml;t. Solche Daten umfassen Geolocation-Daten, IP-Adresse, eindeutige Kennungen (z. B. MAC-Adresse und UUID) sowie andere Daten, die sich aus Ihrer Aktivit&auml;t auf der Webseite ergeben.</span></li><li style="color: rgb(0, 0, 0);"><span style="" class="lh-1 font-size-15">Kundendaten: Wenn Sie &bdquo;Ein strahlendes Land&rdquo; k&auml;uflich erwerben, erfassen wir Ihre E-Mail-Adresse und unter Umst&auml;nden Ihren Vor- und Nachnamen, Ihre Anschrift sowie ggf. weitere Informationen wie andere Kontaktdaten und, falls angegeben, Ihre Bankverbindung. Wenn Sie &bdquo;Ein strahlendes Land&rdquo; &uuml;ber Vimeo streamen, werden ebenfalls personenbezogene Daten erfasst. Insoweit wird auf die Datenschutzerkl&auml;rung und die Cookie-Richtlinie von Vimeo verwiesen.</span></li></ul></div></div> <h4 class="u_1651675547 dmNewParagraph" data-element-type="paragraph" id="1651675547" style="transition: none; display: block;"><span style="font-family:'Open Sans', 'Open Sans Fallback';"><span style="font-weight: 300;"><div><span class="lh-1 font-size-16" style="font-weight: inherit;">Wie erhalten wir Daten &uuml;ber Sie?</span></div></span></span></h4> <div class="dmNewParagraph u_1083860406" id="1083860406"><div><span style="" class="lh-1 font-size-15">Wir beziehen Ihre personenbezogenen Daten aus verschiedenen Quellen:</span></div><div><div><ul class="innerList defaultList"><li><span style="" class="lh-1 font-size-15">Sie stellen uns solche Daten freiwillig bereit, zum Beispiel bei der Registrierung auf unserer Webseite.</span></li><li><span style="" class="lh-1 font-size-15">Wir erhalten solche Daten, wenn Sie unsere Webseite nutzen oder in Verbindung mit einem unserer Services darauf zugreifen.</span></li><li><span style="" class="lh-1 font-size-15">Wir erhalten solche Daten von anderen Anbietern, Services und aus &ouml;ffentlichen Registern (zum Beispiel von Datentraffic-Analyseanbietern).</span></li></ul></div></div></div> <h4 class="u_1970988313 dmNewParagraph" data-element-type="paragraph" id="1970988313" style="transition: none; display: block;"><span style="font-family:'Open Sans', 'Open Sans Fallback';"><span style="font-weight: 300;"><div>Wie werden die Daten genutzt? An wen werden die Daten weitergegeben?</div></span></span></h4> <div class="dmNewParagraph" id="1332322979"><div><span style="" class="lh-1 font-size-15">Wir geben Benutzerdaten nicht an Dritte weiter, au&szlig;er wie in diesen Datenschutzbestimmungen beschrieben.</span></div><div><span style="" class="lh-1 font-size-15"><br/></span></div><div><span style="" class="lh-1 font-size-15">Wir verwenden Daten f&uuml;r folgende Zwecke:</span></div><div><ul class="innerList defaultList" style="color: rgb(51, 62, 76);"><li style=""><font class="lh-1 font-size-15" style="color: rgb(51, 62, 76);"><font style="">Zur Kauf- bzw. Bestellabwicklung, wenn Sie &bdquo;Ein strahlendes Land&ldquo;) &uuml;ber einstrahlendesland.de k&auml;uflich erwerben</font><br/></font></li><li style=""><font class="lh-1 font-size-15" style="color: rgb(51, 62, 76);">Zur Kommunikation mit Ihnen (Senden von Hinweisen bez&uuml;glich unserer Services, Bereitstellen von technischen Informationen und ggf. Bearbeiten von Kundendienstanfragen)<br/></font></li><li style=""><font class="lh-1 font-size-15" style="color: rgb(51, 62, 76);">Zur Information &uuml;ber neue Updates und Services<br/></font></li><li style=""><font class="lh-1 font-size-15" style="color: rgb(51, 62, 76);">Zur Vermarktung unserer Webseiten und Produkte (weitere Informationen unter &bdquo;Marketing&ldquo;)&nbsp;<br/></font></li><li style=""><font style="color: rgb(255, 0, 56);" class="lh-1 font-size-15"><font style="color: rgb(51, 62, 76);">Zu statistischen und Analysezwecken, die der Verbesserung der Webseite dienen</font><br/></font></li></ul></div><div><span style="" class="lh-1 font-size-15">Neben den verschiedenen, oben aufgef&uuml;hrten Verwendungszwecken k&ouml;nnen wir personenbezogene Daten auch an Subunternehmer weitergeben.</span></div><div><span style="" class="lh-1 font-size-15"><br/></span></div><span style="" class="lh-1 font-size-15">Wir k&ouml;nnen Daten auch offenlegen, wenn wir im guten Glauben sind, dies ist hilfreich oder angemessen, um: (i) geltenden Gesetzen, Vorschriften, Gerichtsverfahren oder beh&ouml;rdlichen Anfragen zu entsprechen; (ii) unsere Richtlinien (einschlie&szlig;lich unserer Vereinbarung) durchzusetzen und ggf. diesbez&uuml;gliche m&ouml;gliche Verletzungen zu untersuchen; (iii) illegale Aktivit&auml;ten oder anderes Fehlverhalten, Betrugsverdacht oder Sicherheitsprobleme zu untersuchen, zu erkennen, zu verhindern oder Ma&szlig;nahmen dagegen zu ergreifen; (iv) eigene Rechtsanspr&uuml;che geltend zu machen oder durchzusetzen bzw. uns gegen die Anspr&uuml;che anderer zu verteidigen; (v) die Rechte, das Eigentum oder unsere Sicherheit, die Sicherheit unserer Benutzer, Ihre Sicherheit oder die Sicherheit von Dritten zu sch&uuml;tzen; oder um (vi) mit Strafverfolgungsbeh&ouml;rden zusammenzuarbeiten und/oder geistiges Eigentum oder andere Rechtsanspr&uuml;che zu sch&uuml;tzen.</span></div> <h4 class="u_1095182628 dmNewParagraph" data-element-type="paragraph" id="1095182628" style="transition: none; display: block;"><span style="font-family:'Open Sans', 'Open Sans Fallback';"><span style="font-weight: 300;"><div><span class="lh-1 font-size-16" style="font-weight: inherit;">Cookies</span></div></span></span></h4> <div class="dmNewParagraph" id="1413986830"><div><span style="" class="lh-1 font-size-15">F&uuml;r die Bereitstellung entsprechender Services verwenden wir und unsere Partner Cookies. Dies gilt auch, wenn Sie unsere Webseite besuchen oder auf unsere Services zugreifen.&nbsp;</span></div><div><span style="" class="lh-1 font-size-15"><br/></span></div><div><span style="" class="lh-1 font-size-15">Bei einem &bdquo;Cookie&ldquo; handelt es sich um ein kleines Datenpaket, das Ihrem Ger&auml;t beim Besuch einer Webseite von dieser Webseite zugeordnet wird. Cookies sind n&uuml;tzlich und k&ouml;nnen f&uuml;r unterschiedliche Zwecke eingesetzt werden. Dazu geh&ouml;ren z.&nbsp;B. die erleichterte Navigation zwischen verschiedenen Seiten, die automatische Aktivierung bestimmter Funktionen, das Speichern Ihrer Einstellungen sowie ein optimierter Zugriff auf unsere Services. Die Verwendung von Cookies erm&ouml;glicht uns au&szlig;erdem, Ihnen relevante, auf Ihre Interessen abgestimmte Werbung einzublenden und statistische Informationen zu Ihrer Nutzung unserer Services zu sammeln.&nbsp;</span></div><div><span style="" class="lh-1 font-size-15"><br/></span></div><div><span style="" class="lh-1 font-size-15">Diese Webseite verwendet folgende Arten von Cookies:</span></div><div><span style="" class="lh-1 font-size-15"><br/></span></div><div><span style="" class="lh-1 font-size-15"><span style="font-weight: 700;">a. &bdquo;Sitzungscookies&ldquo;</span>, 
+die f&uuml;r eine normale Systemnutzung sorgen. Sitzungscookies werden nur f&uuml;r begrenzte Zeit w&auml;hrend einer Sitzung gespeichert und von Ihrem Ger&auml;t gel&ouml;scht, sobald Sie Ihren Browser schlie&szlig;en.&nbsp;</span></div><div><span style="" class="lh-1 font-size-15"><br/></span></div><div><span style="" class="lh-1 font-size-15"><span style="font-weight: 700;">b. &bdquo;Permanente Cookies</span>&ldquo;, die nur von der Webseite gelesen und beim Schlie&szlig;en des Browserfensters nicht gel&ouml;scht, sondern f&uuml;r eine bestimmte Dauer auf Ihrem Computer gespeichert werden. Diese Art von Cookie erm&ouml;glicht uns, Sie bei Ihrem n&auml;chsten Besuch zu identifizieren und beispielsweise Ihre Einstellungen zu speichern.&nbsp;</span></div><div><span style="" class="lh-1 font-size-15"><br/></span></div><div><span style="" class="lh-1 font-size-15"><span style="font-weight: 700;">c. &bdquo;Drittanbieter-Cookies&ldquo;</span>, 
+die von anderen Online-Diensten gesetzt werden, die mit eigenen Inhalten auf der von Ihnen besuchten Seite vertreten sind. Dies k&ouml;nnen z.&nbsp;B. externe Web-Analytics-Unternehmen sein, die den Zugriff auf unsere Webseite erfassen und analysieren.</span></div><div><span style="" class="lh-1 font-size-15"><br/></span></div><div><span style="" class="lh-1 font-size-15">Cookies enthalten keine personenbezogenen Daten, die Sie identifizieren, doch die von uns gespeicherten personenbezogenen Daten werden m&ouml;glicherweise von uns mit den in den Cookies enthaltenen Daten verkn&uuml;pft. Sie k&ouml;nnen Cookies &uuml;ber die Ger&auml;teeinstellungen Ihres Ger&auml;t entfernen. Folgen Sie dabei den entsprechenden Anweisungen. Beachten Sie, dass die Deaktivierung von Cookies zur Einschr&auml;nkung bestimmter Funktionen bei der Nutzung unserer Webseite f&uuml;hren kann.</span></div><div><span style="" class="lh-1 font-size-15"><br/></span></div><div><span style="" class="lh-1 font-size-15">Das von uns verwendete Tool basiert auf der Technologie von <a href="https://snowplowanalytics.com" runtime_url="https://snowplowanalytics.com" target="_blank">Snowplow Analytics</a>&nbsp;. Zu den von uns erfassten Daten zur Nutzung unserer Webseite geh&ouml;ren beispielsweise, wie h&auml;ufig Benutzer die Webseite besuchen oder welche Bereiche aufgerufen werden. Das von uns verwendete Tool erfasst keine personenbezogenen Daten und wird von unserem Webhosting-Anbieter und Service-Provider ausschlie&szlig;lich zur Verbesserung des eigenen Angebots verwendet.</span></div></div> <h4 class="u_1526418627 dmNewParagraph" data-element-type="paragraph" id="1526418627" style="transition: none; display: block;"><span style="font-family:'Open Sans', 'Open Sans Fallback';"><span style="font-weight: 300;"><div>Verwendung von Skriptbibliotheken (Google Web Fonts)</div></span></span></h4> <div class="dmNewParagraph" id="1712580140"><div><span style="font-size: 15px;">Damit unsere Inhalte in jedem Browser korrekt und grafisch ansprechend dargestellt werden, verwenden wir f&uuml;r diese Webseite Skript- und Schriftbibliotheken wie Google Web Fonts (<a href="https://www.google.com/webfonts" runtime_url="https://www.google.com/webfonts" target="_blank">https://www.google.com/webfonts</a>). Google Web Fonts werden in den Cache Ihres Browsers &uuml;bertragen, sodass sie nur einmal geladen werden m&uuml;ssen. Wenn Ihr Browser Google Web Fonts nicht unterst&uuml;tzt oder den Zugriff verweigert, werden die Inhalte in einer Standardschriftart dargestellt.&nbsp;</span></div><div><ul class="innerList defaultList"><li>Beim Aufrufen von Skript- oder Schriftbibliotheken wir automatisch eine Verbindung zum Betreiber der Bibliothek hergestellt. Es besteht hierbei theoretisch die M&ouml;glichkeit f&uuml;r diesen Betreiber, Daten zu erfassen. Derzeit ist nicht bekannt, ob und zu welchem Zweck die Betreiber der entsprechenden Bibliotheken tats&auml;chlich Daten erfassen.<br/><br/></li><li>Hier finden Sie die Datenschutzbestimmungen des Betreibers der Google-Bibliothek: <a href="https://www.google.com/policies/privacy" runtime_url="https://www.google.com/policies/privacy" target="_blank" style="background-color: rgba(0, 0, 0, 0);">https://www.google.com/policies/privacy</a><span style="background-color: rgba(0, 0, 0, 0);">.</span></li></ul></div></div> <h4 class="u_1219440013 dmNewParagraph" data-element-type="paragraph" id="1219440013" style="" data-styletopreserve="{"background-image":""}"><span style="font-family:'Open Sans', 'Open Sans Fallback';"><span style="font-weight: 300;"><div>Vimeo</div></span></span></h4> <div class="dmNewParagraph" data-element-type="paragraph" id="1023606152" style="transition: opacity 1s ease-in-out 0s; text-align: left;">Wir binden ein Video der Plattform &ldquo;Vimeo&rdquo; des Anbieters Vimeo Inc., Attention: Legal Department, 555 West 18th Street New York, New York 10011, USA, ein. Datenschutzerkl&auml;rung: https://vimeo.com/privacy. Vimeo kann Google Analytics verwenden. Wir verweisen in diesem Zusammenhang auf die Datenschutzerkl&auml;rung (https://policies.google.com/privacy) von und die Opt-Out-M&ouml;glichkeiten f&uuml;r Google-Analytics (http://tools.google.com/dlpage/gaoptout?hl=de) sowie die Einstellungen von Google f&uuml;r die Datennutzung zu Marketingzwecken (https://adssettings.google.com/).</div> <h4 class="u_1507676094 dmNewParagraph" data-element-type="paragraph" id="1507676094" style="transition: none; display: block;"><span style="font-family:'Open Sans', 'Open Sans Fallback';"><span style="font-weight: 300;"><div><span class="lh-1 font-size-16" style="font-weight: inherit;">Erfassung von Daten durch Dritte</span></div></span></span></h4> <div class="dmNewParagraph" id="1324523389"><div><span style="" class="lh-1 font-size-15">In dieser Richtlinie werden nur die Nutzung und Offenlegung von Daten, die wir von Ihnen erfassen, behandelt. Wenn Sie Daten auf anderen Webseiten ver&ouml;ffentlichen oder Dritten im Internet offenlegen, gelten m&ouml;glicherweise andere Bestimmungen. Lesen Sie sich daher die allgemeinen Gesch&auml;ftsbedingungen und Datenschutzbestimmungen immer sorgf&auml;ltig durch, wenn Sie Daten offenlegen.&nbsp;</span></div><div><span style="" class="lh-1 font-size-15"><br/></span></div><div><span style="" class="lh-1 font-size-15">Diese Datenschutzbestimmungen beziehen sich nicht auf Gesch&auml;ftspraktiken von Unternehmen, die sich nicht in unserem Besitz befinden bzw. nicht unter unserer Kontrolle stehen, oder auf andere Personen als unsere Angestellten und Mitarbeiter, einschlie&szlig;lich Dritter, denen wir diese Daten wie in diesen Datenschutzbestimmungen beschrieben offenlegen.&nbsp;</span></div></div> <h4 class="u_1604837267 dmNewParagraph" data-element-type="paragraph" id="1604837267" style="transition: none; display: block;"><span style="font-family:'Open Sans', 'Open Sans Fallback';"><span style="font-weight: 300;"><span style="font-weight: inherit;" class="lh-1 font-size-16">Wie sch&uuml;tzen wir Ihre Daten?</span></span></span></h4> <div class="dmNewParagraph" id="1114044052"><div><font style="color: rgb(51, 62, 76);"><span style="" class="lh-1 font-size-15">Wir setzen die Sicherheitsma&szlig;nahmen auf der Webseite mit gro&szlig;er Sorgfalt um und sch&uuml;tzen Ihre Daten. Wir verwenden in der Branche &uuml;bliche Verfahren und Richtlinien, um den Schutz der erfassten und gespeicherten Daten sicherzustellen, und verhindern die unbefugte Verwendung solcher Daten. Wir verlangen au&szlig;erdem von Dritten, dass sie sich gem&auml;&szlig; diesen Datenschutzbestimmungen an &auml;hnliche Sicherheitsanforderungen halten. Obwohl wir angemessene Schritte f&uuml;r den Schutz von Daten unternehmen, k&ouml;nnen wir nicht verantwortlich gemacht werden f&uuml;r Handlungen von jenen, die sich unbefugten Zugang zu unserer Webseite verschafft haben oder diese missbr&auml;uchlich verwenden, und wir geben keine ausdr&uuml;ckliche noch stillschweigende Gew&auml;hr, dass wir einen solchen Zugriff verhindern k&ouml;nnen.</span></font></div></div> <h4 class="u_1943112316 dmNewParagraph" data-element-type="paragraph" id="1943112316" style="transition: none; display: block;"><span style="font-family:'Open Sans', 'Open Sans Fallback';"><span style="font-weight: 300;"><div><span class="lh-1 font-size-16" style="font-weight: inherit;">&Uuml;bermittlung von Daten au&szlig;erhalb des Europ&auml;ischen Wirtschaftsraums&nbsp;</span></div></span></span></h4> <div class="dmNewParagraph" id="1185482021"><div><span style="" class="lh-1 font-size-15">Beachten Sie, dass einige Empf&auml;nger ihren Sitz m&ouml;glicherweise nicht im Europ&auml;ischen Wirtschaftsraum haben. Ist dies der Fall, werden wir Ihre Daten nur in von der Europ&auml;ischen Kommission genehmigte L&auml;nder mit angemessenem Datenschutzniveau &uuml;bermitteln oder durch eine rechtliche Vereinbarung ein angemessenes Datenschutzniveau sicherstellen.</span></div></div> <h4 class="u_1615284184 dmNewParagraph" data-element-type="paragraph" id="1615284184" style="transition: none; display: block;"><span style="font-family:'Open Sans', 'Open Sans Fallback';"><span style="font-weight: 300;"><div><span class="lh-1 font-size-16" style="font-weight: inherit;">Marketing</span></div></span></span></h4> <div class="dmNewParagraph" id="1245215339"><div><span style="" class="lh-1 font-size-15">Wir k&ouml;nnen Ihre personenbezogenen Daten wie Ihren Namen, Ihre E-Mail-Adresse, Ihre Telefonnummer usw. selbst verwenden oder an einen externen Untervertragsnehmer weiterleiten, um Ihnen Werbematerialien bez&uuml;glich unserer Services bereitzustellen, die Sie m&ouml;glicherweise interessieren.&nbsp;&nbsp;</span></div><div><span style="" class="lh-1 font-size-15"><br/></span></div><div><span style="" class="lh-1 font-size-15">Wir respektieren Ihr Recht auf Privatsph&auml;re. Daher erhalten Sie in diesen Marketingmaterialien stets die M&ouml;glichkeit, sich von weiteren Zusendungen abzumelden. Wenn Sie sich abmelden, wird Ihre E-Mail-Adresse oder Telefonnummer aus unseren Marketing-Verteilerlisten entfernt.&nbsp;</span></div><div><span style="" class="lh-1 font-size-15"><br/></span></div><div><span style="" class="lh-1 font-size-15">Beachten Sie, dass wir Ihnen auch nach einer Abmeldung vom Erhalt unserer Marketing-E-Mails weiterhin E-Mails mit wichtigen Informationen senden, die keine Abmeldeoption enthalten. Dazu geh&ouml;ren Wartungsmeldungen oder administrative Benachrichtigungen.</span></div></div> <h4 class="u_1059000972 dmNewParagraph" data-element-type="paragraph" id="1059000972" style="transition: none; display: block;"><span style="font-family:'Open Sans', 'Open Sans Fallback';"><span style="font-weight: 300;"><div><span class="lh-1 font-size-16" style="font-weight: inherit;">Unternehmenstransaktion</span></div></span></span></h4> <div class="dmNewParagraph" id="1017714097"><div><span style="" class="lh-1 font-size-15">Wir k&ouml;nnen Daten im Fall einer Unternehmenstransaktion (z.&nbsp;B. beim Verkauf wesentlicher Unternehmensteile, bei einer Fusion, einer Konsolidierung oder einem Anlagenverkauf) weitergeben. Falls ein oben genannter Fall eintritt, &uuml;bernimmt der Erwerber oder das entsprechende Unternehmen die in dieser Datenschutzerkl&auml;rung dargelegten Rechte und Pflichten.</span></div></div> <h4 class="u_1064661103 dmNewParagraph" data-element-type="paragraph" id="1064661103" style="transition: none; display: block;"><span style="font-family:'Open Sans', 'Open Sans Fallback';"><span style="font-weight: 300;"><div><span class="lh-1 font-size-16" style="font-weight: inherit;">Minderj&auml;hrige</span></div></span></span></h4> <div class="dmNewParagraph" id="1536463887"><div><span style="" class="lh-1 font-size-15">Der Schutz der Daten von Kindern ist insbesondere im Online-Bereich sehr wichtig. Die Webseite ist nicht f&uuml;r Kinder konzipiert und richtet sich nicht an diese. Die Nutzung unserer Services durch Minderj&auml;hrige ist nur mit der vorherigen Einwilligung oder Autorisierung von einem Elternteil oder Erziehungsberechtigten zul&auml;ssig. Wir erfassen personenbezogene Daten von Minderj&auml;hrigen nicht wissentlich. Wenn ein Elternteil oder Erziehungsberechtigter Kenntnis davon erlangt, dass sein oder ihr Kind uns personenbezogene Daten ohne deren Einwilligung bereitgestellt hat, kann er/sie sich unter info@einstrahlendesland.de an uns wenden.</span></div></div> <h4 class="u_1144216550 dmNewParagraph" data-element-type="paragraph" id="1144216550" style="transition: none; display: block;"><span style="font-family:'Open Sans', 'Open Sans Fallback';"><span style="font-weight: 300;"><div><span class="lh-1 font-size-16" style="font-weight: inherit;">Aktualisierungen oder &Auml;nderungen dieser Datenschutzbestimmungen</span></div></span></span></h4> <div class="dmNewParagraph" id="1216494406"><div><span style="" class="lh-1 font-size-15">Wir behalten uns das Recht vor, diese Datenschutzbestimmungen von Zeit zu Zeit zu &auml;ndern oder zu pr&uuml;fen. Sie finden das Datum der aktuellen Version unter &bdquo;Zuletzt ge&auml;ndert am&ldquo;. Ihre fortgesetzte Nutzung der Plattform nach der Bekanntmachung solcher &Auml;nderungen auf unserer Webseite stellt Ihre Zustimmung zu solchen &Auml;nderungen an den Datenschutzbestimmungen dar und gilt als Ihr Einverst&auml;ndnis der Bindung an die ge&auml;nderten Bestimmungen.</span></div></div> <h4 class="u_1953255332 dmNewParagraph" data-element-type="paragraph" id="1953255332" style="transition: none; display: block;"><span style="font-family:'Open Sans', 'Open Sans Fallback';"><span style="font-weight: 300;"><div><span class="lh-1 font-size-16" style="font-weight: inherit;">So erreichen Sie uns</span></div></span></span></h4> <div class="dmNewParagraph" id="1048753436"><div><span style="" class="lh-1 font-size-15">Wenden Sie sich bei allgemeinen Fragen zur Webseite, zu den von uns &uuml;ber Sie erfassten Daten oder der Verwendung dieser Daten unter info@einstrahlendesland.de an uns.</span></div><div><span style="" class="lh-1 font-size-15"><br/></span></div>Marvin Oppong Filmproduktion<br/>info@einstrahlendesland.de<br/>Postfach 7389<br/>D-53073 Bonn<br/>Tel.: +49 228 2279910<br/><br/>Zuletzt ge&auml;ndert am 07. Mai 2019</div></div> 
+</div> 
+</div> 
+ <div class="dmRespRow" id="1288530440"> <div class="dmRespColsWrapper" id="1681421921"> <div class="dmRespCol large-12 medium-12 small-12" id="1119501518"> <div class="u_1071988481 dmDividerWrapper clearfix" id="1071988481" data-element-type="dDividerId" layout="divider-style-1" data-widget-version="2"><hr class="dmDivider" style="min-height: 2px; border:none; background:grey" id="1795658677"/></div> 
+ <div class="u_1325460642 dmNewParagraph" data-element-type="paragraph" id="1325460642" style="transition: opacity 1s ease-in-out 0s;">Impressum: Marvin Oppong Filmproduktion, Postfach 7389, D-53073 Bonn, E-Mail: info@oppong.eu, Tel./Fax: +49 228 2279910, USt-IdNr.: DE292363174 | Alle Rechte vorbehalten &copy; 2025| <a runtime_url="http://einstrahlendesland.de/datenschutz" href="http://einstrahlendesland.de/datenschutz">Datenschutz</a><br/></div></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmFooterContainer"> <div id="fcontainer" class="f_hcontainer dmFooter p_hfcontainer"> <div dm:templateorder="250" class="dmFooterResp generalFooter" id="1943048428"> <div class="dmRespRow u_1472522769" style="text-align: center;" id="1472522769"> <div class="dmRespColsWrapper" id="1528715676"> <div class="dmRespCol small-12 medium-12 large-12" id="1477716553"> <div class="dmNewParagraph" data-element-type="paragraph" id="1386730199" style="transition: opacity 1s ease-in-out 0s;"><div style="margin-left: 40px;">Impressum: Marvin Oppong Filmproduktion, Postfach 7389, D-53073 Bonn, E-Mail: info@oppong.eu, Tel./Fax: +49 228 2279910, USt-IdNr.: DE292363174 | Alle Rechte vorbehalten &copy; 2019 | <a runtime_url="https://www.einstrahlendesland.de/datenschutz" href="datenschutz.html">Datenschutz</a><br/></div></div> <div class="dmDividerWrapper clearfix u_1412754167" id="1412754167" layout="divider-style-1" data-element-type="dDividerId"><hr class="dmDivider" style="min-height: 2px; border:none; background:grey" id="1778968577"/></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div id="1236746004" dmle_extension="powered_by" data-element-type="powered_by" icon="https://www.einstrahlendesland.de/true" surround="false"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+    </div>
+</div>
+<!--  Add full CSS and Javascript before the close tag of the body if needed -->
+<!-- ========= JS Section ========= -->
+<script>
+    var isWLR = true;
+
+    window.customWidgetsFunctions = {};
+    window.customWidgetsStrings = {};
+    window.collections = {};
+    window.currentLanguage = "GERMAN"
+    window.isSitePreview = false;
+</script>
+<script type="text/javascript">
+
+    var d_version = "production_6259";
+    var build = "2026-03-10T09_50_23";
+    window['v' + 'ersion'] = d_version;
+
+    function buildEditorParent() {
+        window.isMultiScreen = true;
+        window.editorParent = {};
+        window.previewParent = {};
+        window.assetsCacheQueryParam = "?version=2026-03-10T09_50_23";
+        try {
+            var _p = window.parent;
+            if (_p && _p.document && _p.$ && _p.$.dmfw) {
+                window.editorParent = _p;
+            } else if (_p.isSitePreview) {
+                window.previewParent = _p;
+            }
+        } catch (e) {
+
+        }
+    }
+
+    buildEditorParent();
+</script>
+
+<!-- Load jQuery -->
+<script type="text/javascript" id='d-js-jquery'
+        src="../static-cdn.website-editor.net/libs/jquery/jquery-3.7.0.min.js"></script>
+<!-- End Load jQuery -->
+<!-- Injecting site-wide before scripts -->
+<!-- End Injecting site-wide to the head -->
+
+
+<script>
+    var _jquery = window.$;
+
+    var jqueryAliases = ['$', 'jquery', 'jQuery'];
+
+    jqueryAliases.forEach((alias) => {
+        Object.defineProperty(window, alias, {
+            get() {
+                return _jquery;
+            },
+            set() {
+                console.warn("Trying to over-write the global jquery object!");
+            }
+        });
+    });
+    window.jQuery.migrateMute = true;
+</script>
+<script>
+    window.cookiesNotificationMarkupPreview = ' <div> <p class=\"rteBlock\">Diese Webseite verwendet Cookies, um Ihnen ein optimales Online-Erlebnis bieten zu k&ouml;nnen. Durch die Nutzung dieser Webseite erkl&auml;ren Sie sich mit der Verwendung von Cookies einverstanden. <a value=\"http:\/\/einstrahlendesland.de\/datenschutz\" type=\"url\" href=\"http:\/\/einstrahlendesland.de\/datenschutz\" data-runtime-url=\"http:\/\/einstrahlendesland.de\/datenschutz\">Mehr Infos.<\/a> \n<\/p> \n<\/div> \n';
+</script>
+
+<!-- HEAD RT JS Include -->
+<script id='d-js-params'>
+    window.INSITE = window.INSITE || {};
+    window.INSITE.device = "desktop";
+
+    window.rtCommonProps = {};
+    rtCommonProps["rt.ajax.ajaxScriptsFix"] =true;
+    rtCommonProps["rt.pushnotifs.sslframe.encoded"] = 'aHR0cHM6Ly97c3ViZG9tYWlufS5wdXNoLW5vdGlmcy5jb20=';
+    rtCommonProps["runtimecollector.url"] = 'https://rtc.website-editor.net';
+    rtCommonProps["performance.tabletPreview.removeScroll"] = 'false';
+    rtCommonProps["inlineEditGrid.snap"] =true;
+    rtCommonProps["popup.insite.cookie.ttl"] = '0.5';
+    rtCommonProps["rt.pushnotifs.force.button"] =true;
+    rtCommonProps["common.mapbox.token"] = '';
+    rtCommonProps["common.mapbox.js.override"] =false;
+    rtCommonProps["common.here.appId"] = 'iYvDjIQ2quyEu0rg0hLo';
+    rtCommonProps["common.here.appCode"] = '1hcIxLJcbybmtBYTD9Z1UA';
+    rtCommonProps["isCoverage.test"] =false;
+    rtCommonProps["ecommerce.ecwid.script"] = 'https://app.multiscreenstore.com/script.js';
+    rtCommonProps["common.resources.dist.cdn"] =true;
+    rtCommonProps["common.build.dist.folder"] = 'production/6259';
+    rtCommonProps["common.resources.cdn.host"] = 'https://static-cdn.website-editor.net';
+    rtCommonProps["common.resources.folder"] = 'https://static-cdn.website-editor.net/mnlt/production/6259';
+    rtCommonProps["feature.flag.runtime.backgroundSlider.preload.slowly"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.jitAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.sites.google.analytics.gtag"] =true;
+    rtCommonProps["feature.flag.runOnReadyNewTask"] =true;
+    rtCommonProps["isAutomation.test"] =false;
+    rtCommonProps["booking.cal.api.domain"] = 'api.cal.com';
+
+    
+    rtCommonProps['common.mapsProvider'] = 'mapbox';
+    
+    rtCommonProps['common.mapsProvider.version'] = '0.52.0';
+    rtCommonProps['common.geocodeProvider'] = 'mapbox';
+    rtCommonProps['server.for.resources'] = '';
+    rtCommonProps['feature.flag.lazy.widgets'] = false;
+    rtCommonProps['feature.flag.single.wow'] = false;
+    rtCommonProps['feature.flag.disallowPopupsInEditor'] = true;
+    rtCommonProps['feature.flag.mark.anchors'] = true;
+    rtCommonProps['captcha.public.key'] = '6LffcBsUAAAAAMU-MYacU-6QHY4iDtUEYv_Ppwlz';
+    rtCommonProps['captcha.invisible.public.key'] = '6LeiWB8UAAAAAHYnVJM7_-7ap6bXCUNGiv7bBPME';
+    rtCommonProps["images.sizes.small"] =160;
+    rtCommonProps["images.sizes.mobile"] =640;
+    rtCommonProps["images.sizes.tablet"] =1280;
+    rtCommonProps["images.sizes.desktop"] =1920;
+    rtCommonProps["modules.resources.cdn"] =true;
+    rtCommonProps["import.images.storage.imageCDN"] = 'https://le-cdn.website-editor.net/';
+    rtCommonProps["feature.flag.runtime.inp.threshold"] =150;
+    rtCommonProps["feature.flag.performance.logs"] =true;
+    rtCommonProps["site.widget.form.captcha.type"] = 'g_recaptcha';
+    rtCommonProps["friendly.captcha.site.key"] = 'FCMGSQG9GVNMFS8K';
+    rtCommonProps["cookiebot.mapbox.consent.category"] = 'marketing';
+    // feature flags that's used out of runtime module (in  legacy files)
+    rtCommonProps["platform.monolith.personalization.dateTimeCondition.popupMsgAction.moveToclient.enabled"] =true;
+
+    window.rtFlags = {};
+    rtFlags["unsuspendEcwidStoreOnRuntime.enabled"] =false;
+    rtFlags["scripts.widgetCount.enabled"] =true;
+    rtFlags["fnb.animations.tracking.enabled"] =true;
+    rtFlags["ecom.ecwidNewUrlStructure.enabled"] = false;
+    rtFlags["ecom.ecwid.accountPage.emptyBaseUrl.enabled"] = true;
+    rtFlags["ecom.ecwid.pages.links.disable.listeners"] = true;
+    rtFlags["ecom.ecwid.storefrontV3.enabled"] = false;
+    rtFlags["ecom.ecwid.old.store.fix.facebook.share"] = true;
+    rtFlags["feature.flag.photo.gallery.exact.size"] =true;
+    rtFlags["geocode.search.localize"] =false;
+    rtFlags["feature.flag.runtime.newAnimation.asyncInit.setTimeout.enabled"] =false;
+    rtFlags["twitter.heightLimit.enabled"] = true;
+    rtFlags["runtime.lottieOverflow"] =false;
+    rtFlags["runtime.monitoring.sentry.ignoreErrors"] = "";
+    rtFlags["streamline.monolith.personalization.supportMultipleConditions.enabled"] =false;
+    rtFlags["flex.animation.design.panel.layout"] =true;
+    rtFlags["runtime.cwv.report.cls.enabled"] =false;
+    rtFlags["runtime.cwv.report.lcp.enabled"] =false;
+    rtFlags["contact.form.useActiveForm"] =true;
+    rtFlags["contact.form.custom.errors.enabled"] =false;
+    rtFlags["runtime.ssr.productStore.internal.observer"] =true;
+    rtFlags["runtime.ssr.productCustomizations"] =true;
+    rtFlags["runtime.ssr.runtime.filter-sort.newFilterSortWidgetWithOptions.enabled"] =true;
+    rtFlags["runtime.ssr.ssrSlider.jumpThreshold.enabled"] =true;
+</script>
+<script src="../static-cdn.website-editor.net/mnlt/production/6259/_dm/s/rt/dist/scripts/d-js-one-runtime-unified-desktop.min.js"  id="d-js-core"></script>
+<!-- End of HEAD RT JS Include -->
+<script src="../static-cdn.website-editor.net/mnlt/production/6259/_dm/s/rt/dist/scripts/d-js-jquery-migrate.min.js" ></script>
+<script>
+    
+    $(window).bind("orientationchange", function (e) {
+        $.layoutManager.initLayout();
+        
+    });
+    $(document).resize(function () {
+        
+    });
+</script>
+<script type="text/javascript" id="d_track_campaign">
+(function() {
+    if (!window.location.search) {
+        return;
+    }
+	const cleanParams = window.location.search.substring(1); // Strip ?
+	const queryParams = cleanParams.split('&');
+
+	const expires = 'expires=' + new Date().getTime() + 24 * 60 * 60 * 1000;
+	const domain = 'domain=' + window.location.hostname;
+	const path = "path=/";
+
+	queryParams.forEach((param) => {
+		const [key, value = ''] = param.split('=');
+		if (key.startsWith('utm_')) {
+			const cookieName = "_dm_rt_" + key.substring(4);
+			const cookie = cookieName + "=" + value;
+			const joined = [cookie, expires, domain, path].join(";");
+			document.cookie = joined;
+		}
+	});
+}());
+</script>
+<script type="text/javascript" >
+  var _dm_gaq = {};
+  var _gaq = _gaq || [];
+  var _dm_insite = [];
+</script>
+
+<script type="text/javascript" id="d_track_sp">
+;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+};p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","//d1dxoqu0t5mb7j.cloudfront.net/sp-2.0.0-dm-0.1.min.js","snowplow"));
+window.dmsnowplow  = window.snowplow;
+
+dmsnowplow('newTracker', 'cf', 'd1dxoqu0t5mb7j.cloudfront.net', { // Initialise a tracker
+  appId: '71f4d987307d4a71adfb410c2d30359c'
+});
+
+// snowplow queries element styles so we wait until CSS calculations are done.
+requestAnimationFrame(() => {
+	dmsnowplow('trackPageView');
+	_dm_insite.forEach((rule) => {
+		// Specifically in popup only the client knows if it is shown or not so we don't always want to track its impression here
+		// the tracking is in popup.js
+		if (rule.actionName !== "popup") {
+			dmsnowplow('trackStructEvent', 'insite', 'impression', rule.ruleType, rule.ruleId);
+		}
+		window?.waitForDeferred?.('dmAjax', () => {
+			$.DM.events.trigger('event-ruleTriggered', {value: rule});
+		});
+	});
+});
+</script>
+   <div style="display:none;" id="P6iryBW0Wu"></div>
+
+<!-- photoswipe markup -->
+
+
+
+
+
+
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Schließen (ESC)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Teilen"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Vollbild ein-/ausschalten"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Vergrößern/verkleinern"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Zurück (Pfeil nach links)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Weiter (Pfeil nach rechts)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div id="fb-root"
+        data-locale="de_DE"></div>
+<!-- Alias: 71f4d987307d4a71adfb410c2d30359c -->
+<div class="dmPopupMask" id="dmPopupMask"></div>
+<div id="dmPopup" class="dmPopup">
+	<div class="dmPopupCloseWrapper"> <div class="dmPopupClose dm-common-icons-close oneIcon" onclick="dmHidePopup(event);"></div> </div>
+ 	<div class="dmPopupTitle"> <span></span> Share by:</div> 
+	<div class="data"></div>
+</div><script id="d_track_personalization">
+	window?.waitForDeferred?.('dmAjax', () => {
+		// Collects client data and updates cookies used by smart sites
+		window.expireDays = 365;
+		window.visitLength = 30 * 60000;
+		$.setCookie("dm_timezone_offset", (new Date()).getTimezoneOffset(), window.expireDays);
+			setSmartSiteCookiesInternal("dm_this_page_view","dm_last_page_view","dm_total_visits","dm_last_visit");
+	});
+</script>
+<script type="text/javascript">
+    
+    Parameters.NavigationAreaParams.MoreButtonText = '......';
+    
+    Parameters.NavigationAreaParams.LessButtonText = '......';
+    Parameters.HomeLinkText = 'Home';
+    </script>
+<!--  End Script tags -->
+<!--  Site Wide Html Markup -->
+<!--  Site Wide Html Markup -->
+</body>
+</html>

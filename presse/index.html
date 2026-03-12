@@ -1,0 +1,1267 @@
+<!doctype html >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de"
+      class="">
+<head>
+    <meta charset="utf-8">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    window._currentDevice = 'desktop';
+    window.Parameters = window.Parameters || {
+        HomeUrl: 'http://www.einstrahlendesland.de/',
+
+        AccountUUID: 'e5fc8128a3064ecb9eb63e7f7551be49',
+
+        SystemID: '1AND1_EU_PROD',
+        SiteAlias: '71f4d987307d4a71adfb410c2d30359c',
+        SiteType: atob('RFVEQU9ORQ=='),
+        PublicationDate: 'Tue Mar 10 10:32:57 UTC 2026',
+        ExternalUid: '39c0f40d-42a7-4786-86c9-6d04c3a2af7d',
+        IsSiteMultilingual: false,
+        InitialPostAlias: '',
+        InitialPostPageUuid: '',
+        InitialDynamicItem: '',
+        DynamicPageInfo: {
+            isDynamicPage: false,
+            base64JsonRowData: 'null',
+        },
+        InitialPageAlias: 'presse',
+        InitialPageUuid: '1ec4661f3460495d89e004f3c60e457b',
+        InitialPageId: '709938516',
+        InitialEncodedPageAlias: 'cHJlc3Nl',
+        InitialHeaderUuid: 'fe4207ecf50148aa89475dce54d4c469',
+        CurrentPageUrl: '',
+        IsCurrentHomePage: false,
+        AllowAjax: false,
+        AfterAjaxCommand: null,
+        HomeLinkText: 'Back To Home',
+        UseGalleryModule: false,
+        CurrentThemeName: 'Layout Theme',
+        ThemeVersion: '500000',
+        DefaultPageAlias: '',
+        RemoveDID: true,
+        WidgetStyleID: null,
+        IsHeaderFixed: true,
+        IsHeaderSkinny: true,
+        IsBfs: true,
+        StorePageAlias: 'null',
+        StorePagesUrls: 'e30=',
+        IsNewStore: 'false',
+        StorePath: '',
+        StoreId: 'null',
+        StoreVersion: 0,
+        StoreBaseUrl: '',
+        StoreCleanUrl: true,
+        StoreDisableScrolling: true,
+        IsStoreSuspended: false,
+        HasCustomDomain: true,
+        SimpleSite: false,
+        showCookieNotification: true,
+        cookiesNotificationMarkup: ' <div> <p class=\"rteBlock\">Diese Webseite verwendet Cookies, um Ihnen ein optimales Online-Erlebnis bieten zu k&ouml;nnen. Durch die Nutzung dieser Webseite erkl&auml;ren Sie sich mit der Verwendung von Cookies einverstanden. <a value=\"http:\/\/einstrahlendesland.de\/datenschutz\" type=\"url\" href=\"http:\/\/einstrahlendesland.de\/datenschutz\" data-runtime-url=\"http:\/\/einstrahlendesland.de\/datenschutz\">Mehr Infos.<\/a> \n<\/p> \n<\/div> \n',
+        translatedPageUrl: '',
+        isFastMigrationSite: false,
+        sidebarPosition: 'NA',
+        currentLanguage: 'de',
+        currentLocale: 'de',
+        NavItems: '{}',
+        errors: {
+            general: 'There was an error connecting to the page.<br/> Make sure you are not offline.',
+            password: 'Incorrect name/password combination',
+            tryAgain: 'Try again'
+        },
+        NavigationAreaParams: {
+            ShowBackToHomeOnInnerPages: true,
+            NavbarSize: 4,
+            NavbarLiveHomePage: 'http://www.einstrahlendesland.de/',
+            BlockContainerSelector: '.dmBody',
+            NavbarSelector: '#dmNav:has(a)',
+            SubNavbarSelector: '#subnav_main'
+        },
+        hasCustomCode: false,
+        planID: '2799',
+        customTemplateId: 'null',
+        siteTemplateId: 'null',
+        productId: 'DM_DIRECT',
+        disableTracking: false,
+        pageType: 'FROM_SCRATCH',
+        isRuntimeServer: true,
+        isInEditor: false,
+        hasNativeStore: false,
+        defaultLang: 'de',
+        hamburgerMigration: null,
+        isFlexSite: false
+    };
+
+    window.Parameters.LayoutID = {};
+    window.Parameters.LayoutID[window._currentDevice] = 6;
+    window.Parameters.LayoutVariationID = {};
+    window.Parameters.LayoutVariationID[window._currentDevice] = 5;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Injecting site-wide to the head -->
+
+
+
+
+<!-- End Injecting site-wide to the head -->
+
+<!-- Inject secured cdn script -->
+
+
+<!-- ========= Meta Tags ========= -->
+<!-- PWA settings -->
+<script>
+    function toHash(str) {
+        var hash = 5381, i = str.length;
+        while (i) {
+            hash = hash * 33 ^ str.charCodeAt(--i)
+        }
+        return hash >>> 0
+    }
+</script>
+<script>
+    (function (global) {
+    //const cacheKey = global.cacheKey;
+    const isOffline = 'onLine' in navigator && navigator.onLine === false;
+    const hasServiceWorkerSupport = 'serviceWorker' in navigator;
+    if (isOffline) {
+        console.log('offline mode');
+    }
+    if (!hasServiceWorkerSupport) {
+        console.log('service worker is not supported');
+    }
+    if (hasServiceWorkerSupport && !isOffline) {
+        window.addEventListener('load', function () {
+            const serviceWorkerPath = '/runtime-service-worker.js?v=3';
+            navigator.serviceWorker
+                .register(serviceWorkerPath, { scope: './' })
+                .then(
+                    function (registration) {
+                        // Registration was successful
+                        console.log(
+                            'ServiceWorker registration successful with scope: ',
+                            registration.scope
+                        );
+                    },
+                    function (err) {
+                        // registration failed :(
+                        console.log('ServiceWorker registration failed: ', err);
+                    }
+                )
+                .catch(function (err) {
+                    console.log(err);
+                });
+        });
+
+        // helper function to refresh the page
+        var refreshPage = (function () {
+            var refreshing;
+            return function () {
+                if (refreshing) return;
+                // prevent multiple refreshes
+                var refreshkey = 'refreshed' + location.href;
+                var prevRefresh = localStorage.getItem(refreshkey);
+                if (prevRefresh) {
+                    localStorage.removeItem(refreshkey);
+                    if (Date.now() - prevRefresh < 30000) {
+                        return; // dont go into a refresh loop
+                    }
+                }
+                refreshing = true;
+                localStorage.setItem(refreshkey, Date.now());
+                console.log('refereshing page');
+                window.location.reload();
+            };
+        })();
+
+        function messageServiceWorker(data) {
+            return new Promise(function (resolve, reject) {
+                if (navigator.serviceWorker.controller) {
+                    var worker = navigator.serviceWorker.controller;
+                    var messageChannel = new MessageChannel();
+                    messageChannel.port1.onmessage = replyHandler;
+                    worker.postMessage(data, [messageChannel.port2]);
+                    function replyHandler(event) {
+                        resolve(event.data);
+                    }
+                } else {
+                    resolve();
+                }
+            });
+        }
+    }
+})(window);
+</script>
+<!-- Add manifest -->
+<!-- End PWA settings -->
+
+
+
+<link rel="canonical" href="presse.html">
+
+<meta id="view" name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!--Add favorites icons-->
+
+<link rel="apple-touch-icon"
+      href="https://cdn.website-editor.net/71f4d987307d4a71adfb410c2d30359c/dms3rep/multi/Titelbild.jpg"/>
+
+<link rel="icon" type="image/x-icon" href="../cdn.website-editor.net/71f4d987307d4a71adfb410c2d30359c/site_favicon_16_1644392547926.ico"/>
+
+<!-- End favorite icons -->
+<link rel="preconnect" href="https://le-cdn.website-editor.net/"/>
+
+
+
+<!-- render the required CSS and JS in the head section -->
+<script id='d-js-dmapi'>
+    window.SystemID = '1AND1_EU_PROD';
+
+    if (!window.dmAPI) {
+        window.dmAPI = {
+            registerExternalRuntimeComponent: function () {
+            },
+            getCurrentDeviceType: function () {
+                return window._currentDevice;
+            },
+            runOnReady: (ns, fn) => {
+                const safeFn = dmAPI.toSafeFn(fn);
+                ns = ns || 'global_' + Math.random().toString(36).slice(2, 11);
+                const eventName = 'afterAjax.' + ns;
+
+                if (document.readyState === 'complete') {
+                    $.DM.events.off(eventName).on(eventName, safeFn);
+                    setTimeout(function () {
+                        safeFn({
+                            isAjax: false,
+                        });
+                    }, 0);
+                } else {
+                    window?.waitForDeferred?.('dmAjax', () => {
+                        $.DM.events.off(eventName).on(eventName, safeFn);
+                        safeFn({
+                            isAjax: false,
+                        });
+                    });
+                }
+            },
+            toSafeFn: (fn) => {
+                if (fn?.safe) {
+                    return fn;
+                }
+                const safeFn = function (...args) {
+                    try {
+                        return fn?.apply(null, args);
+                    } catch (e) {
+                        console.log('function failed ' + e.message);
+                    }
+                };
+                safeFn.safe = true;
+                return safeFn;
+            }
+        };
+    }
+
+    if (!window.requestIdleCallback) {
+        window.requestIdleCallback = function (fn) {
+            setTimeout(fn, 0);
+        }
+    }
+</script>
+
+<!-- loadCSS function header.jsp-->
+
+
+
+
+
+
+<script id="d-js-load-css">
+/**
+ * There are a few <link> tags with CSS resource in them that are preloaded in the page
+ * in each of those there is a "onload" handler which invokes the loadCSS callback
+ * defined here.
+ * We are monitoring 3 main CSS files - the runtime, the global and the page.
+ * When each load we check to see if we can append them all in a batch. If threre
+ * is no page css (which may happen on inner pages) then we do not wait for it
+ */
+(function () {
+  let cssLinks = {};
+  function loadCssLink(link) {
+    link.onload = null;
+    link.rel = "stylesheet";
+    link.type = "text/css";
+  }
+  
+    function checkCss() {
+      const pageCssLink = document.querySelector("[id*='CssLink']");
+      const widgetCssLink = document.querySelector("[id*='widgetCSS']");
+
+        if (cssLinks && cssLinks.runtime && cssLinks.global && (!pageCssLink || cssLinks.page) && (!widgetCssLink || cssLinks.widget)) {
+            const storedRuntimeCssLink = cssLinks.runtime;
+            const storedPageCssLink = cssLinks.page;
+            const storedGlobalCssLink = cssLinks.global;
+            const storedWidgetCssLink = cssLinks.widget;
+
+            storedGlobalCssLink.disabled = true;
+            loadCssLink(storedGlobalCssLink);
+
+            if (storedPageCssLink) {
+                storedPageCssLink.disabled = true;
+                loadCssLink(storedPageCssLink);
+            }
+
+            if(storedWidgetCssLink) {
+                storedWidgetCssLink.disabled = true;
+                loadCssLink(storedWidgetCssLink);
+            }
+
+            storedRuntimeCssLink.disabled = true;
+            loadCssLink(storedRuntimeCssLink);
+
+            requestAnimationFrame(() => {
+                setTimeout(() => {
+                    storedRuntimeCssLink.disabled = false;
+                    storedGlobalCssLink.disabled = false;
+                    if (storedPageCssLink) {
+                      storedPageCssLink.disabled = false;
+                    }
+                    if (storedWidgetCssLink) {
+                      storedWidgetCssLink.disabled = false;
+                    }
+                    // (SUP-4179) Clear the accumulated cssLinks only when we're
+                    // sure that the document has finished loading and the document 
+                    // has been parsed.
+                    if(document.readyState === 'interactive') {
+                      cssLinks = null;
+                    }
+                }, 0);
+            });
+        }
+    }
+  
+
+  function loadCSS(link) {
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var noCSS = !!urlParams.get("nocss");
+      var cssTimeout = urlParams.get("cssTimeout") || 0;
+
+      if (noCSS) {
+        return;
+      }
+      if (link.href && link.href.includes("d-css-runtime")) {
+        cssLinks.runtime = link;
+        checkCss();
+      } else if (link.id === "siteGlobalCss") {
+        cssLinks.global = link;
+        checkCss();
+      } 
+      
+      else if (link.id && link.id.includes("CssLink")) {
+        cssLinks.page = link;
+        checkCss();
+      } else if (link.id && link.id.includes("widgetCSS")) {
+        cssLinks.widget = link;
+        checkCss();
+      }
+      
+      else {
+        requestIdleCallback(function () {
+          window.setTimeout(function () {
+            loadCssLink(link);
+          }, parseInt(cssTimeout, 10));
+        });
+      }
+    } catch (e) {
+      throw e
+    }
+  }
+  window.loadCSS = window.loadCSS || loadCSS;
+})();
+</script>
+
+
+
+<script data-role="deferred-init" type="text/javascript">
+    /* usage: window.getDeferred(<deferred name>).resolve() or window.getDeferred(<deferred name>).promise.then(...)*/
+    function Def() {
+        this.promise = new Promise((function (a, b) {
+            this.resolve = a, this.reject = b
+        }).bind(this))
+    }
+
+    const defs = {};
+    window.getDeferred = function (a) {
+        return null == defs[a] && (defs[a] = new Def), defs[a]
+    }
+    window.waitForDeferred = function (b, a, c) {
+        let d = window?.getDeferred?.(b);
+        d
+            ? d.promise.then(a)
+            : c && ["complete", "interactive"].includes(document.readyState)
+                ? setTimeout(a, 1)
+                : c
+                    ? document.addEventListener("DOMContentLoaded", a)
+                    : console.error(`Deferred  does not exist`);
+    };
+</script>
+<style id="forceCssIncludes">
+    /* This file is auto-generated from a `scss` file with the same name */
+
+.videobgwrapper{overflow:hidden;position:absolute;z-index:0;width:100%;height:100%;top:0;left:0;pointer-events:none;border-radius:inherit}.videobgframe{position:absolute;width:101%;height:100%;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);object-fit:fill}#dm video.videobgframe{margin:0}@media (max-width:767px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:80vh}}@media (min-width:1025px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}@media (min-width:768px) and (max-width:1024px){.responsiveTablet .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}#dm [data-show-on-page-only]{display:none!important}#dmRoot div.stickyHeaderFix div.site_content{margin-top:0!important}#dmRoot div.stickyHeaderFix div.hamburger-header-container{position:relative}
+    
+
+</style>
+<style id="cssVariables" type="text/css">
+    
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Google Fonts Include -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- loadCSS function fonts.jsp-->
+
+
+
+<link type="text/css" rel="stylesheet" href="https://cdn.website-editor.net/fonts/css2?family=Lusitana:ital,wght@0,400;0,700&family=Arimo:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Alike:ital,wght@0,400&family=Alfa+Slab+One:ital,wght@0,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&subset=latin-ext&display=block"  />
+
+
+
+
+
+<!-- RT CSS Include d-css-runtime-desktop-one-package-structured-global-->
+<link rel="stylesheet" type="text/css" href="../static-cdn.website-editor.net/mnlt/production/6259/_dm/s/rt/dist/css/d-css-runtime-desktop-one-package-structured-global.min.css" />
+
+<!-- End of RT CSS Include -->
+
+<link type="text/css" rel="stylesheet" href="../cdn.website-editor.net/WIDGET_CSS/0176d524d75ad4164e2f7df429a824be.css" id="widgetCSS" />
+
+<!-- Support `img` size attributes -->
+<style>img[width][height] {
+  height: auto;
+}</style>
+
+<!-- Support showing sticky element on page only -->
+<style>
+  body[data-page-alias="presse"] #dm [data-show-on-page-only="presse"] {
+    display: block !important;
+  }
+</style>
+
+<!-- This is populated in Ajax navigation -->
+<style id="pageAdditionalWidgetsCss" type="text/css">
+</style>
+
+
+
+
+<!-- Site CSS -->
+<link type="text/css" rel="stylesheet" href="../cdn.website-editor.net/71f4d987307d4a71adfb410c2d30359c/files/71f4d987307d4a71adfb410c2d30359c_1.min.css%3Fv=1032.css" id="siteGlobalCss" />
+
+
+
+<style id="customWidgetStyle" type="text/css">
+    
+</style>
+<style id="innerPagesStyle" type="text/css">
+    
+</style>
+
+
+<style
+        id="additionalGlobalCss" type="text/css"
+>
+</style>
+
+<style id="pagestyle" type="text/css">
+    *.dmFooterContainer { display:none !important; }
+
+*#dm *.dmBody div.u_1833289030 hr {
+  height:0px !important;
+  min-height:0px !important;
+  background-color:transparent !important;
+  background:none !important;
+  background-size:initial !important;
+  border-top-width:0px !important;
+  border-color:currentColor !important;
+  border-width:1px !important;
+  border-top-style:solid !important;
+}
+
+</style>
+
+<style id="pagestyleDevice" type="text/css">
+    *#dm *.dmBody div.u_1422128950 {
+  float:none !important;
+  top:0px !important;
+  left:0 !important;
+  width:100% !important;
+  position:relative !important;
+  height:auto !important;
+  padding-top:2px !important;
+  padding-left:0px !important;
+  padding-bottom:2px !important;
+  max-width:100% !important;
+  padding-right:0px !important;
+  min-width:0 !important;
+  text-align:left !important;
+}
+
+*#dm *.dmBody div.u_1032727453 {
+  float:none !important;
+  top:0px !important;
+  left:0 !important;
+  width:calc(100% - 0px) !important;
+  position:relative !important;
+  height:15px !important;
+  padding-top:0px !important;
+  padding-left:0px !important;
+  padding-bottom:0px !important;
+  margin-right:auto !important;
+  margin-left:auto !important;
+  max-width:100% !important;
+  margin-top:206px !important;
+  margin-bottom:0px !important;
+  padding-right:0px !important;
+  min-width:25px !important;
+  text-align:center !important;
+}
+
+*#dm *.dmBody div.u_1833289030 {
+  float:none !important;
+  top:0px !important;
+  left:0 !important;
+  width:calc(100% - 0px) !important;
+  position:relative !important;
+  height:auto !important;
+  padding-top:0px !important;
+  padding-left:0px !important;
+  padding-bottom:0px !important;
+  max-width:100% !important;
+  padding-right:0px !important;
+  min-width:25px !important;
+  text-align:start !important;
+}
+
+</style>
+
+<!-- Flex Sections CSS -->
+
+
+
+
+
+
+
+<style id="globalFontSizeStyle" type="text/css">
+    .font-size-48, .size-48, .size-48 > font { font-size: 48px !important; }.font-size-22, .size-22, .size-22 > font { font-size: 22px !important; }
+</style>
+<style id="pageFontSizeStyle" type="text/css">
+</style>
+
+
+
+
+<style id="hideAnimFix">
+  .dmDesktopBody:not(.editGrid) [data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) [data-anim-extended] {
+    visibility: hidden;
+  }
+
+  .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-extended] {
+    visibility: hidden !important;
+  }
+
+  #dmRoot:not(.editGrid) .flex-element [data-anim-extended] {
+    visibility: hidden;
+  }
+
+</style>
+
+
+
+
+<style id="fontFallbacks">
+    @font-face {
+  font-family: "Lusitana Fallback";
+  src: local('Arial');
+  ascent-override: 101.9286%;
+  descent-override: 36.3574%;
+  size-adjust: 93.7912%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Arimo Fallback";
+  src: local('Arial');
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Montserrat Fallback";
+  src: local('Arial');
+  ascent-override: 84.9466%;
+  descent-override: 22.0264%;
+  size-adjust: 113.954%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Rubik Fallback";
+  src: local('Arial');
+  ascent-override: 88.5654%;
+  descent-override: 23.6806%;
+  size-adjust: 105.5717%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "PT Sans Fallback";
+  src: local('Arial');
+  ascent-override: 104.2579%;
+  descent-override: 28.2664%;
+  size-adjust: 97.6425%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Alike Fallback";
+  src: local('Arial');
+  ascent-override: 96.9517%;
+  descent-override: 26.6026%;
+  size-adjust: 101.4938%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Alfa Slab One Fallback";
+  src: local('Arial');
+  ascent-override: 85.4761%;
+  descent-override: 27.4744%;
+  size-adjust: 121.2035%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Open Sans Fallback";
+  src: local('Arial');
+  ascent-override: 101.1768%;
+  descent-override: 27.7323%;
+  size-adjust: 105.6416%;
+  line-gap-override: 0%;
+ }
+</style>
+
+
+<!-- End render the required css and JS in the head section -->
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.einstrahlendesland.de/presse">
+
+  <title>
+    Presse
+  </title>
+  <meta name="keywords" content="Presse, Pressematerial, Filmplakat, Stills, Presseberichte, Crowdfunding"/>
+  <meta name="description" content="Presse, Crowdfunding"/>
+
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="Presse"/>
+  <meta name="twitter:description" content="Presse, Crowdfunding"/>
+  <meta name="twitter:image" content="https://le-cdn.website-editor.net/71f4d987307d4a71adfb410c2d30359c/dms3rep/multi/opt/Filmplakat-1920w.jpg"/>
+  <meta property="og:description" content="Presse, Crowdfunding"/>
+  <meta property="og:title" content="Presse"/>
+  <meta property="og:image" content="https://le-cdn.website-editor.net/71f4d987307d4a71adfb410c2d30359c/dms3rep/multi/opt/Filmplakat-1920w.jpg"/>
+
+
+
+
+<!-- SYS- MUFORDFfRVVfUFJPRA== -->
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body id="dmRoot" data-page-alias="presse"  class="dmRoot dmDesktopBody fix-mobile-scrolling addCanvasBorder dmResellerSite mac dmLargeBody "
+      style="padding:0;margin:0;"
+      
+    >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========= Site Content ========= -->
+<div id="dm" class='dmwr'>
+    
+    <div class="dm_wrapper standard-var5 widgetStyle-3 standard">
+         <div dmwrapped="true" id="1652396186"> <div dmtemplateid="StandardLayoutMultiD" class="standardHeaderLayout dm-bfs dm-layout-sec hasAnimations dmPageBody d-page-1670094715 inputs-css-clean dmFreeHeader" id="dm-outer-wrapper" data-page-class="1670094715" data-soch="true" data-background-parallax-selector=".dmHomeSection1, .dmSectionParallex"> <div id="dmStyle_outerContainer" class="dmOuter"> <div id="dmStyle_innerContainer" class="dmInner"> <div class="dmLayoutWrapper standard-var dmStandardDesktop"> <div> <div id="iscrollBody"> <div id="site_content"> <div class="dmHeaderContainer fHeader d-header-wrapper"> <div id="hcontainer" class="u_hcontainer dmHeader p_hfcontainer" freeheader="true"> <div dm:templateorder="85" class="dmHeaderResp dmHeaderStack noSwitch" id="1709005236"> <div class="u_1945822334 dmRespRow" style="text-align: center;" id="1945822334"> <div class="dmRespColsWrapper" id="1531770931"> <div class="u_1437076231 dmRespCol small-12 medium-12 large-12" id="1437076231"> <span id="1187770996"></span> 
+ <div data-element-type="spacer" class="u_1517156694 dmSpacer" id="1517156694"></div> 
+ <h1 data-inject="home-At5row1Title" class="u_1179288028 dmNewParagraph" id="1179288028" data-element-type="paragraph" style="text-align: justify;"><span style="font-family:'PT Sans', 'PT Sans Fallback';"><span style="font-weight: 400;"><span style="font-weight: inherit;"><span style="font-weight: inherit;"><span style="font-weight: inherit;"><span style="font-weight: 400; font-size: 48px;"><span style="font-family:Rubik, 'Rubik Fallback';"><font class="lh-1 m-font-size-36 font-size-48">Ei<span style="font-weight: 400;"></span>n strahlendes Land</font></span><br/></span></span></span></span></span></span></h1> <div class="u_1079746567 dmDividerWrapper clearfix" data-element-type="dDividerId" data-layout="divider-style-1" data-widget-version="2" id="1079746567"><hr class="dmDivider" style="border-width:2px; border-top-style:solid; color:grey;" id="1264054290"/></div> 
+ <nav class="u_1284501632 effect-text-color main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="horizontal_nav_layout_2" layout-sub="submenu_horizontal_1" data-show-vertical-sub-items="HOVER" id="1284501632" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" navigation_id="" wr="false" icon="https://www.einstrahlendesland.de/true" surround="false" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="index.html" class="unifiednav__item  dmUDNavigationItem_00  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Home
+        " data-auto="page-text-style">Home<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="https://www.einstrahlendesland.de/der-film" class="unifiednav__item  dmUDNavigationItem_010101407278  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Der Film
+        " data-auto="page-text-style">Der Film<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="https://www.einstrahlendesland.de/trailer" class="unifiednav__item  dmUDNavigationItem_010101693920  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Trailer
+        " data-auto="page-text-style">Trailer<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="https://www.einstrahlendesland.de/kinotermine" class="unifiednav__item  dmUDNavigationItem_010101716434  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Kinotermine
+        " data-auto="page-text-style">Kinotermine<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="presse.html" class="unifiednav__item  dmNavItemSelected  dmUDNavigationItem_010101819557  " target="" data-target-page-alias="" aria-current="page" data-auto="selected-page"> <span class="nav-item-text " data-link-text="
+         Presse
+        " data-auto="page-text-style">Presse<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+ <div data-element-type="spacer" class="u_1789337129 dmSpacer" id="1789337129"></div> 
+ <div class="u_1734295359 align-center text-align-center dmSocialHub gapSpacing" id="1734295359" dmle_extension="social_hub" data-element-type="social_hub" wr="true" networks="" icon="https://www.einstrahlendesland.de/true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv "> <a href="https://vimeo.com/853165220" target="_blank" dm_dont_rewrite_url="true" aria-label="vimeo" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Vimeo&apos;)"> <span class="dmSocialVimeo dm-social-icons-vimeo oneIcon socialHubIcon style5" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="https://www.youtube.com/watch?v=roeuSHbuiQU" target="_blank" dm_dont_rewrite_url="true" aria-label="youtube" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Youtube&apos;)"> <span class="dmSocialYoutube dm-social-icons-youtube oneIcon socialHubIcon style5" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="mailto:info@einstrahlendesland.de" dm_dont_rewrite_url="true" aria-label="email" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Email&apos;)"> <span class="dmSocialEmail dm-social-icons-email oneIcon socialHubIcon style5" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow dmRespRowStable dmRespRowNoPadding dmPageTitleRow "> <div class="dmRespColsWrapper"> <div class="large-12 dmRespCol"> <div id="innerBar" class="innerBar lineInnerBar dmDisplay_None"> <div class="titleLine display_None"><hr/></div> 
+<!-- Page title is hidden in css for new responsive sites. It is left here only so we don't break old sites. Don't copy it to new layouts --> <div id="pageTitleText"> <div class="innerPageTitle">Presse</div> 
+</div> 
+ <div class="titleLine display_None"><hr/></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div dmwrapped="true" id="dmFirstContainer" class="dmBody u_dmStyle_template_presse"> <div id="allWrapper" class="allWrapper"> <div id="dm_content" class="dmContent" role="main"> <div dm:templateorder="1" class="dmDefaultRespTmpl" id="1670094715"> <div class="innerPageTmplBox dmDefaultPage  dmRespRowsWrapper" id="1248452043"> <div class="dmRespRow dmDefaultListContentRow" style="text-align:center" id="1788419260"> <div class="dmRespColsWrapper" id="1569970043"> <div class="large-12 medium-12 small-12 dmRespCol" id="1511117208"> <div class="dmNewParagraph" data-element-type="paragraph" id="1205491639" background-image="" :="" style="line-height:initial;" data-version="5"><p class="text-align-justify size-22"><span style="display: initial;" class="font-size-22">&bdquo;Ein strahlendes Land&ldquo; ist eine unabh&auml;ngige und werbefreie Produktion der Marvin Oppong Filmproduktion ohne institutionelle Filmf&ouml;rderung, die durch die ehrenamtliche Mitwirkung vieler Beteiligter erm&ouml;glicht und von 123 Personen durch Crowdfunding unterst&uuml;tzt wurde:<br/></span></p><p style="line-height: 14px;" class="text-align-justify"><span style="display: initial;">&nbsp;<br/></span></p> <ul class="defaultList bullet"><li class="text-align-justify size-22"><a href="https://www.startnext.com/strahlendes-land" target="_blank" runtime_url="https://www.startnext.com/strahlendes-land" style="color: rgb(93, 108, 245); display: initial;" class="font-size-22">&bdquo;Ein strahlendes Land&ldquo;</a><span class="font-size-22" style="display: initial;">, Startnext, 19.3.-23.4.2018, 2.650 Euro von 69 Unterst&uuml;tzer*innen</span></li></ul> 
+<p style="line-height: 14px;" class="text-align-justify"><span style="display: initial;">&nbsp;<br/></span></p> <ul class="defaultList bullet"><li class="text-align-justify size-22"><a href="https://www.ecocrowd.de/projekte/ein-strahlendes-land/" target="_blank" runtime_url="https://www.ecocrowd.de/projekte/ein-strahlendes-land/" style="color: rgb(93, 108, 245); display: initial;" class="font-size-22">&bdquo;Ein strahlendes Land&ldquo;</a><span class="font-size-22" style="display: initial;">, Ecocrowd, 4.5.-28.8.2018, 1.081 Euro von 22 Unterst&uuml;tzer*innen</span></li></ul> 
+<p style="line-height: 14px;" class="text-align-justify"><span style="display: initial;">&nbsp;<br/></span></p> <ul class="defaultList bullet"><li class="text-align-justify size-22"><a href="https://www.startnext.com/strahlendes-land-kino" target="_blank" runtime_url="https://www.startnext.com/strahlendes-land-kino" style="color: rgb(93, 108, 245); display: initial;" class="font-size-22">&bdquo;Wir bringen 'Ein strahlendes Land' ins Kino&ldquo;</a><span class="font-size-22" style="display: initial;">, Startnext, 13.3.-25.3.2019, 1.362 Euro von 20 Unterst&uuml;tzer*innen</span></li><li class="text-align-justify size-22"><a href="https://www.startnext.com/strahlendes-land-vod" target="_blank" runtime_url="https://www.startnext.com/strahlendes-land-vod" style="color: rgb(93, 108, 245); display: initial;" class="font-size-22">&bdquo;'Ein strahlendes Land' als VoD-Stream und DVD&ldquo;</a><span class="font-size-22" style="display: initial;">, Startnext, 18.12.2020-18.1.2021, 492 Euro von 12 Unterst&uuml;tzer*innen<br/></span></li></ul> 
+<p style="line-height: 14px;" class="text-align-justify"><span style="display: initial;">&nbsp;<br/></span></p><p class="text-align-justify"><span style="display: initial;" class="font-size-22"><br/></span></p><p class="text-align-justify size-22"><span class="font-size-22" style="display: initial;"><span style="display: initial;" class="font-size-22">&bdquo;Ein strahlendes Land&ldquo; war Teil der Filmauswahl beim International Uranium Film Festival 2020 in Berlin. &bdquo;Wegen der sehr positiven Reaktionen des Publikums&ldquo; hat das Festival &bdquo;Ein strahlendes Land&ldquo; mit einem &bdquo;Honorable Mention&ldquo; ausgezeichnet. Zum Final des Festivals geht es</span> 
+</span><a href="https://uraniumfilmfestival.org/en/uranium-film-festival-berlin-2020-final" target="_blank" runtime_url="https://uraniumfilmfestival.org/en/uranium-film-festival-berlin-2020-final" class="font-size-22" style="display: initial; color: rgb(93, 108, 245);">hier</a><span class="font-size-22" style="display: initial;"> <span class="font-size-22" style="display: initial;">.</span></span></p><p><span style="display: initial;"><br/></span></p><p><span style="display: initial;" class="font-size-22"><br/></span></p><p><span style="display: initial;" class="font-size-22"><br/></span></p><p class="size-22"><strong style="font-weight: bold; display: initial;" class="font-size-22">Presseberichte:</strong><span style="display: initial;"><br/></span></p><p style="line-height: 14px;"><span style="display: initial;">&nbsp;<br/></span></p> <ul class="defaultList bullet"><li class="size-22"><a href="https://www.aachener-zeitung.de/nrw-region/in-einem-strahlenden-land-crowdfunding-projekt-fuer-doku-film_aid-24480609" target="_blank" runtime_url="https://www.aachener-zeitung.de/nrw-region/in-einem-strahlenden-land-crowdfunding-projekt-fuer-doku-film_aid-24480609" style="color: rgb(93, 108, 245); display: initial;" class="font-size-22">In einem strahlenden Land</a><span class="font-size-22" style="display: initial;">, Aachener Zeitung/Aachener Nachrichten, 6. April 2018</span></li></ul> 
+<p style="line-height: 14px;"><span style="display: initial;">&nbsp;<br/></span></p> <ul class="defaultList bullet"><li class="size-22"><a href="https://www.onetz.de/amberg-in-der-oberpfalz/vermischtes/auf-recherche-im-strahlenden-land-und-in-amberg-journalist-sucht-spender-d1847698.html" target="_blank" runtime_url="https://www.onetz.de/amberg-in-der-oberpfalz/vermischtes/auf-recherche-im-strahlenden-land-und-in-amberg-journalist-sucht-spender-d1847698.html" style="color: rgb(93, 108, 245); display: initial;" class="font-size-22">Auf Recherche im &quot;strahlenden Land&quot; - und in Amberg Journalist sucht Spender</a><span class="font-size-22" style="display: initial;">, Onetz, 23. April 2018</span></li></ul> 
+<p style="line-height: 14px;"><span style="display: initial;">&nbsp;<br/></span></p> <ul class="defaultList bullet"><li class="size-22"><a href="https://detektor.fm/gesellschaft/marvin-oppong-mit-dem-geigerzaehler-durch-deutschland" target="_blank" runtime_url="https://detektor.fm/gesellschaft/marvin-oppong-mit-dem-geigerzaehler-durch-deutschland" style="color: rgb(93, 108, 245); display: initial;" class="font-size-22">Verstrahlte Landschaften?</a><span class="font-size-22" style="display: initial;">, detektor.fm, 16. Juli 2018</span></li></ul> 
+<p style="line-height: 14px;"><span style="display: initial;">&nbsp;<br/></span></p> <ul class="defaultList bullet"><li class="size-22"><a href="index.html" runtime_url="/" style="color: rgb(93, 108, 245); display: initial;" class="font-size-22">Wie stark strahlt&rsquo;s den</a><a href="https://www.abendblatt.de/region/kreis-lauenburg/geesthacht/article214951651/Wie-stark-strahlt-s-denn-da-oben.html" runtime_url="https://www.abendblatt.de/region/kreis-lauenburg/geesthacht/article214951651/Wie-stark-strahlt-s-denn-da-oben.html" style="color: rgb(93, 108, 245); display: initial;" class="font-size-22" target="_blank">n da oben?</a><span class="font-size-22" style="display: initial;">, Bergedorfer Zeitung/Lauenburgische Landeszeitung , 28. Juli 2018</span></li></ul> 
+<p style="line-height: 14px;"><span style="display: initial;">&nbsp;<br/></span></p> <ul class="defaultList bullet"><li class="size-22"><span style="display: initial;" class="font-size-22">Millionen f&uuml;r Entsorgung verstrahlter Wildschweine, Der neue Tag, 22. M&auml;rz 2019</span></li></ul> 
+<p style="line-height: 14px;"><span style="display: initial;">&nbsp;<br/></span></p> <ul class="defaultList bullet"><li class="size-22"><a href="https://magazin.spiegel.de/SP/2019/14/163159169/index.html" target="_blank" runtime_url="https://magazin.spiegel.de/SP/2019/14/163159169/index.html" style="color: rgb(93, 108, 245); display: initial;" class="font-size-22">Verstrahltes Schwarzwild</a><span class="font-size-22" style="display: initial;">, DER SPIEGEL, Nr. 14/2019, 30. M&auml;rz 2019, S. 21</span></li></ul> 
+<p style="line-height: 14px;"><span style="display: initial;">&nbsp;<br/></span></p> <ul class="defaultList bullet"><li class="size-22"><a href="https://bonn.fm/filmpremiere-ein-strahlendes-land-marvin-oppong-im-interview/" target="_blank" runtime_url="https://bonn.fm/filmpremiere-ein-strahlendes-land-marvin-oppong-im-interview/" style="color: rgb(93, 108, 245); display: initial;" class="font-size-22">Filmpremiere &bdquo;Ein strahlendes Land&ldquo; &ndash; Marvin Oppong im Interview</a><span class="font-size-22" style="display: initial;">, bonnFM, 6. Juni 2019</span></li></ul> 
+<p style="line-height: 14px;"><span style="display: initial;">&nbsp;<br/></span></p> <ul class="defaultList bullet"><li class="size-22"><span class="font-size-22" style="display: initial;"><span style="display: initial;" class="font-size-22">Film-Vorank&uuml;ndigung,</span> 
+</span><a href="https://www.general-anzeiger-bonn.de/" target="_blank" runtime_url="https://www.general-anzeiger-bonn.de/" class="font-size-22" style="display: initial; color: rgb(93, 108, 245);">General-Anzeiger Bonn</a><span class="font-size-22" style="display: initial;"><span class="font-size-22" style="display: initial;">, Boulevard, 8./9. Juni 2019</span> 
+</span></li></ul> 
+<p style="line-height: 14px;"><span style="display: initial;">&nbsp;<br/></span></p> <ul class="defaultList bullet"><li class="size-22"><span class="font-size-22" style="display: initial;"><span style="display: initial;" class="font-size-22">Ein strahlendes Land,</span> 
+</span><a href="https://www.theatergemeinde-bonn.de/info.php?Kategorie=�kultur�+-+das+Magazin&Kategorietyp=1" target="_blank" runtime_url="https://www.theatergemeinde-bonn.de/info.php?Kategorie=%84kultur%94+-+das+Magazin&Kategorietyp=1" class="font-size-22" style="display: initial; color: rgb(93, 108, 245);">kultur</a><span class="font-size-22" style="display: initial;"><span class="font-size-22" style="display: initial;">, Magazin der Theatergemeinde Bonn, Nr. 157, Juni 2019</span> 
+</span></li></ul> 
+<p style="line-height: 14px;"><span style="display: initial;">&nbsp;<br/></span></p> <ul class="defaultList bullet"><li class="size-22"><span class="font-size-22" style="display: initial;"><span style="display: initial;" class="font-size-22">Dokumentarfilm &uuml;ber radioaktive Orte in Deutschland,</span> 
+</span><a href="http://general-anzeiger-bonn.de" target="_blank" runtime_url="http://general-anzeiger-bonn.de" class="font-size-22" style="display: initial; color: rgb(93, 108, 245);">general-anzeiger-bonn.de</a><span class="font-size-22" style="display: initial;">, 11. Juni 2019<br/></span></li></ul> 
+<p style="line-height: 14px;"><span style="display: initial;">&nbsp;<br/></span></p> <ul class="defaultList bullet"><li class="size-22"><span class="font-size-22" style="display: initial;"><span style="display: initial;" class="font-size-22">Interview mit dem Regisseur von &bdquo;Ein strahlendes Land&ldquo;, Marvin Oppong, Mosaik - Das Kulturmagazin,</span> 
+</span><a href="https://www1.wdr.de/radio/wdr3/index.html" target="_blank" runtime_url="https://www1.wdr.de/radio/wdr3/index.html" class="font-size-22" style="display: initial; color: rgb(93, 108, 245);">WDR 3</a><span class="font-size-22" style="display: initial;"><span class="font-size-22" style="display: initial;">, 12. Juni 2019</span> 
+</span></li></ul> 
+<p style="line-height: 14px;"><span style="display: initial;">&nbsp;<br/></span></p> <ul class="defaultList bullet"><li class="size-22"><a href="https://www.film-rezensionen.de/2019/06/ein-strahlendes-land-mit-dem-geigerzaehler-durch-deutschland/" target="_blank" runtime_url="https://www.film-rezensionen.de/2019/06/ein-strahlendes-land-mit-dem-geigerzaehler-durch-deutschland/" style="color: rgb(93, 108, 245); display: initial;" class="font-size-22">Ein strahlendes Land &ndash; Mit dem Geigerz&auml;hler durch Deutschland</a><span class="font-size-22" style="display: initial;">, film-rezensionen.de, 12. Juni 2019</span></li></ul> 
+<p style="line-height: 14px;"><span style="display: initial;">&nbsp;<br/></span></p> <ul class="defaultList bullet"><li class="size-22"><a href="https://bonn.fm/ein-gar-nicht-so-sehr-strahlendes-land-filmpremiere-ein-strahlendes-land/" target="_blank" runtime_url="https://bonn.fm/ein-gar-nicht-so-sehr-strahlendes-land-filmpremiere-ein-strahlendes-land/" style="color: rgb(93, 108, 245); display: initial;" class="font-size-22">Ein gar nicht so sehr strahlendes Land? &ndash; Filmpremiere &bdquo;Ein strahlendes Land&ldquo;</a><span class="font-size-22" style="display: initial;">, bonn.fm, 13. Juni 2019</span></li></ul> 
+<p style="line-height: 14px;"><span style="display: initial;">&nbsp;<br/></span></p> <ul class="defaultList bullet"><li class="size-22"><a href="https://www.filmdienst.de/film/details/573114/ein-strahlendes-land#kritik#kritik" target="_blank" runtime_url="https://www.filmdienst.de/film/details/573114/ein-strahlendes-land#kritik" style="color: rgb(93, 108, 245); display: initial;" class="font-size-22">Kritik von Reinhard L&uuml;ke</a><span class="font-size-22" style="display: initial;">, filmdienst.de, 20. Juni 2019</span></li></ul> 
+<p style="line-height: 14px;"><span style="display: initial;">&nbsp;<br/></span></p> <ul class="defaultList bullet"><li class="size-22"><span style="display: initial;" class="font-size-22">Strahlendes Land, Umweltjournalist, 2019, 24. Juni 2019</span></li></ul> 
+<p style="line-height: 14px;"><span style="display: initial;">&nbsp;<br/></span></p> <ul class="defaultList bullet"><li class="size-22"><a href="https://magazin.spiegel.de/SP/2019/29/" target="_blank" runtime_url="https://magazin.spiegel.de/SP/2019/29/" style="color: rgb(93, 108, 245); display: initial;" class="font-size-22">Strahlendes Wasser</a><span class="font-size-22" style="display: initial;">, DER SPIEGEL, Nr. 29/2019, 13. Juli 2019, S. 22</span></li></ul> 
+<p style="line-height: 14px;"><span style="display: initial;">&nbsp;<br/></span></p> <ul class="defaultList bullet"><li class="size-22"><a href="https://www.ejz.de/kiebitz/get.php?&datum=2019-07-31&datei=KIE-LZG-31_07_2019-007-07&type=pdf" target="_blank" runtime_url="https://www.ejz.de/kiebitz/get.php?&datum=2019-07-31&datei=KIE-LZG-31_07_2019-007-07&type=pdf" style="color: rgb(93, 108, 245); display: initial;" class="font-size-22">Film &uuml;ber Radioaktivit&auml;t in Deutschland</a><span class="font-size-22" style="display: initial;">, Elbe-Jeetzel-Zeitung, 31. Juli 2019</span></li></ul> 
+<p style="line-height: 14px;"><span style="display: initial;">&nbsp;<br/></span></p> <ul class="defaultList bullet"><li class="size-22"><a href="https://www.ejz.de/lokales/lokales/ein-strahlendes-land-ein-film-mit-wenig-aussagekraft_50_111755224-28-.html" target="_blank" runtime_url="https://www.ejz.de/lokales/lokales/ein-strahlendes-land-ein-film-mit-wenig-aussagekraft_50_111755224-28-.html" style="color: rgb(93, 108, 245); display: initial;" class="font-size-22">&quot;Ein strahlendes Land&quot;: Ein Film mit wenig Aussagekraft</a><span class="font-size-22" style="display: initial;">, Elbe-Jeetzel-Zeitung, 8. August 2019</span></li></ul> 
+<p style="line-height: 14px;"><span style="display: initial;">&nbsp;<br/></span></p> <ul class="defaultList bullet"><li class="size-22"><span style="display: initial;" class="font-size-22">Deutschland &ndash; Ein strahlendes Land?, Bonner Umweltzeitung, Ausgabe September/Oktober 2019</span></li></ul> 
+<p style="line-height: 14px;"><span style="display: initial;">&nbsp;<br/></span></p> <ul class="defaultList bullet"><li class="size-22"><a href="https://www.saarbruecker-zeitung.de/saarland/merzig-wadern/losheim/das-kino-lichtspiele-zeigt-in-losheim-und-wadern-ein-strahlendes-land_aid-46289275" target="_blank" runtime_url="https://www.saarbruecker-zeitung.de/saarland/merzig-wadern/losheim/das-kino-lichtspiele-zeigt-in-losheim-und-wadern-ein-strahlendes-land_aid-46289275" style="color: rgb(93, 108, 245); display: initial;" class="font-size-22">Mit dem Geigerz&auml;hler durch Deutschland</a><span class="font-size-22" style="display: initial;">, Saarbr&uuml;cker Zeitung, 4. Oktober 2019</span></li></ul> 
+<p style="line-height: 14px;"><span style="display: initial;">&nbsp;<br/></span></p> <ul class="defaultList bullet"><li class="size-22"><span style="display: initial;" class="font-size-22">&bdquo;Ein strahlendes Land&ldquo;, Wolfenb&uuml;tteler Schaufenster, 5. Januar 2020<br/></span></li></ul> 
+<p style="line-height: 14px;"><span style="display: initial;">&nbsp;<br/></span></p> <ul class="defaultList bullet"><li class="size-22"><a href="https://braunschweig-spiegel.de/atomanlagen-rundreise/" target="_blank" runtime_url="https://braunschweig-spiegel.de/atomanlagen-rundreise/" style="color: rgb(93, 108, 245); display: initial;" class="font-size-22">Atomanlagen-Rundreise</a><span class="font-size-22" style="display: initial;">, Braunschweig-Spiegel, 7. Januar 2020</span></li></ul> 
+<p style="line-height: 14px;"><span style="display: initial;">&nbsp;<br/></span></p> <ul class="defaultList bullet"><li class="size-22"><a href="https://www.neue-braunschweiger.de/hier-ist-was-los-9-januar-2/" target="_blank" runtime_url="https://www.neue-braunschweiger.de/hier-ist-was-los-9-januar-2/" style="color: rgb(93, 108, 245); display: initial;" class="font-size-22">Hier ist was los: 9. Januar 2020</a><span class="font-size-22" style="display: initial;">, Neue Braunschweiger, 8. Januar 2020</span></li></ul> 
+<p style="line-height: 14px;"><span style="display: initial;">&nbsp;<br/></span></p> <ul class="defaultList bullet"><li class="size-22"><a href="https://www.herzog-magazin.de/wp-content/uploads/2019/12/HZG_No_97_epaper.x55906.pdf" target="_blank" runtime_url="https://www.herzog-magazin.de/wp-content/uploads/2019/12/HZG_No_97_epaper.x55906.pdf" style="color: rgb(93, 108, 245); display: initial;" class="font-size-22">Ein strahlendes Land</a><span class="font-size-22" style="display: initial;">, Herzog Magazin, Nr. 97, Januar 2020</span></li></ul> 
+<p style="line-height: 14px;"><span style="display: initial;">&nbsp;<br/></span></p> <ul class="defaultList bullet"><li class="size-22"><a href="https://plus.pnp.de/lokales/regen/3579753_Ein-strahlendes-Land-Film-und-Diskussion.html" target="_blank" runtime_url="https://plus.pnp.de/lokales/regen/3579753_Ein-strahlendes-Land-Film-und-Diskussion.html" style="color: rgb(93, 108, 245); display: initial;" class="font-size-22">&quot;Ein strahlendes Land&quot;: Film und Diskussion</a><span class="font-size-22" style="display: initial;">, PNP Plus, 22. Januar 2020</span></li></ul> 
+<p style="line-height: 14px;"><span style="display: initial;">&nbsp;<br/></span></p> <ul class="defaultList bullet"><li class="size-22"><span style="display: initial;" class="font-size-22">&bdquo;Ein strahlendes Land&ldquo;: Film und Diskussion, Bayerwald-Bote, 22. Januar 2020</span></li></ul> 
+<p style="line-height: 14px;"><span style="display: initial;">&nbsp;<br/></span></p> <ul class="defaultList bullet"><li class="size-22"><a href="https://www.aachener-zeitung.de/lokales/juelich/blauaeugigkeit-und-ungeklaerte-fragen_aid-48684175" target="_blank" runtime_url="https://www.aachener-zeitung.de/lokales/juelich/blauaeugigkeit-und-ungeklaerte-fragen_aid-48684175" style="color: rgb(93, 108, 245); display: initial;" class="font-size-22">Blau&auml;ugigkeit und ungekl&auml;rte Fragen</a><span class="font-size-22" style="display: initial;">, Aachener Zeitung, 1. Februar 2020</span></li></ul> 
+<p style="line-height: 14px;"><span style="display: initial;">&nbsp;<br/></span></p> <ul class="defaultList bullet"><li class="size-22"><a href="https://uraniumfilmfestival.org/en/uranium-film-festival-selected-first-films" target="_blank" runtime_url="https://uraniumfilmfestival.org/en/uranium-film-festival-selected-first-films" style="color: rgb(93, 108, 245); display: initial;" class="font-size-22">International Uranium Film Festival First Films</a><span class="font-size-22" style="display: initial;">, 10. Februar 2020<br/></span></li></ul> 
+<p style="line-height: 14px;"><span style="display: initial;">&nbsp;<br/></span></p> <ul class="defaultList bullet"><li class="size-22"><a href="https://www.idowa.de/inhalt.radioaktivitaet-in-ostbayern-es-ist-noch-immer-ein-heikles-thema.c0b543e1-cb3c-4a3a-b5d9-0fa413e81b05.html" target="_blank" runtime_url="https://www.idowa.de/inhalt.radioaktivitaet-in-ostbayern-es-ist-noch-immer-ein-heikles-thema.c0b543e1-cb3c-4a3a-b5d9-0fa413e81b05.html" style="color: rgb(93, 108, 245); display: initial;" class="font-size-22">&bdquo;Es ist immer noch ein heikles Thema&ldquo;</a><span class="font-size-22" style="display: initial;">, Straubinger Tagblatt, 13. M&auml;rz 2020</span></li></ul> 
+<p style="line-height: 14px;"><span style="display: initial;">&nbsp;<br/></span></p> <ul class="defaultList bullet"><li class="size-22"><a href="https://www.solinger-tageblatt.de/solingen/radioaktivitaet-zeigt-dokumentarfilm-13898245.html" target="_blank" runtime_url="https://www.solinger-tageblatt.de/solingen/radioaktivitaet-zeigt-dokumentarfilm-13898245.html" style="color: rgb(93, 108, 245); display: initial;" class="font-size-22">Radioaktivit&auml;t: VHS zeigt Dokumentarfilm</a><span class="font-size-22" style="display: initial;">, Solinger Tageblatt, 9. September 2020</span></li></ul> 
+<p style="line-height: 14px;"><span style="display: initial;">&nbsp;<br/></span></p> <ul class="defaultList bullet"><li class="size-22"><span class="font-size-22" style="display: initial;"><span style="display: initial;" class="font-size-22">International Uranium Film Festival,</span> 
+</span><a href="https://uraniumfilmfestival.org/en/program-berlin-2020" target="_blank" runtime_url="https://uraniumfilmfestival.org/en/program-berlin-2020" class="font-size-22" style="display: initial; color: rgb(93, 108, 245);">Program Berlin 2020</a></li></ul> 
+<p style="line-height: 14px;"><span style="display: initial;">&nbsp;<br/></span></p> <ul class="defaultList bullet"><li class="size-22"><span class="font-size-22" style="display: initial;"><span style="display: initial;" class="font-size-22">Uranium Film Festival Berlin 2020,</span> 
+</span><a href="https://uraniumfilmfestival.org/en/uranium-film-festival-berlin-2020-final" target="_blank" runtime_url="https://uraniumfilmfestival.org/en/uranium-film-festival-berlin-2020-final" class="font-size-22" style="display: initial; color: rgb(93, 108, 245);">Final</a><span class="font-size-22" style="display: initial;">, 22. Oktober 2020</span></li></ul> 
+<p><span style="display: initial;"><br/></span></p> <ul class="defaultList bullet"><li class="size-22"><a href="https://www.tag24.de/chemnitz/rassismus-am-chemnitzer-hauptbahnhof-angriff-auf-schwarzen-journalisten-1716969" target="_blank" runtime_url="https://www.tag24.de/chemnitz/rassismus-am-chemnitzer-hauptbahnhof-angriff-auf-schwarzen-journalisten-1716969" style="color: rgb(93, 108, 245); display: initial;" class="font-size-22">Rassismus am Chemnitzer Hauptbahnhof? Taxifahrer attackiert schwarzen Journalisten</a><span class="font-size-22" style="display: initial;">, Chemnitzer Morgenpost/tag24.de, 10. November 2020</span></li></ul> 
+<p><span style="display: initial;"><br/></span></p> <ul class="defaultList bullet"><li class="size-22"><a href="https://www.rheinpfalz.de/lokal/ludwigshafen_artikel,-ein-dokumentarfilm-über-radioaktive-strahlung-_arid,5307447.html?reduced=true" target="_blank" runtime_url="https://www.rheinpfalz.de/lokal/ludwigshafen_artikel,-ein-dokumentarfilm-%C3%BCber-radioaktive-strahlung-_arid,5307447.html?reduced=true" type="url" style="display: initial;" class="font-size-22">Ein Dokumentarfilm &uuml;ber radioaktive Strahlung</a><span class="font-size-22" style="display: initial;">, Die Rheinpfalz, 26. Januar 2022</span></li></ul> 
+<p><span style="display: initial;"><br/></span></p> <ul class="defaultList bullet"><li class="m-size-18 size-22"><span style="display: initial;" class="font-size-22 m-font-size-18">Vortrag bei den Horber Friedenstagen: Atomstrahlung bleibt gef&auml;hrlich, S&uuml;dwest Presse Neckar-Chronik, 17. November 2023<br/></span></li></ul> 
+<p><span style="display: initial;"><br/></span></p> <ul class="defaultList bullet"><li class="m-size-18 size-22"><a href="https://www.schwarzwaelder-bote.de/inhalt.projekt-zukunft-horb-zum-abschied-gibt-es-eine-rockparty-im-kloster.557b639d-1d7f-4a47-9ecb-84965fd8146b.html" target="_blank" runtime_url="https://www.schwarzwaelder-bote.de/inhalt.projekt-zukunft-horb-zum-abschied-gibt-es-eine-rockparty-im-kloster.557b639d-1d7f-4a47-9ecb-84965fd8146b.html" type="url" style="display: initial;" class="font-size-22 m-font-size-18">Zum Abschied gibt es eine Rockparty im Kloster</a><span class="font-size-22 m-font-size-18" style="display: initial;">, Schwarzw&auml;lder Bote, 6. Dezember 2023</span></li></ul> 
+<p><span style="display: initial;"><br/></span></p><p><span style="display: initial;"><br/></span></p><p style="line-height: 14px;"><span style="display: initial;">&nbsp;<br/></span></p><p><span style="display: initial;" class="m-font-size-18 font-size-22"><br/></span></p><p><span style="display: initial;" class="m-font-size-18 font-size-22"><br/></span></p><p class="m-size-18 size-22"><strong style="font-weight: bold; display: initial;" class="m-font-size-18 font-size-22">Pressekontakt:<br/></strong></p><p><span style="display: initial;"><br/></span></p><p class="m-size-18 size-22"><a href="mailto:info@einstrahlendesland.de" runtime_url="mailto:info@einstrahlendesland.de" type="email" style="display: initial;" class="m-font-size-18 font-size-22"><span style="text-decoration: underline;">info@einstrahlendesland.de</span></a></p><p class="m-size-18 size-22"><span style="display: initial;" class="m-font-size-18 font-size-22">Tel.: +49 228 227 99 10<br/></span></p><p><span style="display: initial;"><br/></span></p><p><span style="display: initial;" class="m-font-size-18 font-size-22"><br/></span></p><p class="m-size-18 size-22"><strong style="font-weight: bold; display: initial;" class="m-font-size-18 font-size-22">Pressematerial:</strong></p><p><span style="display: initial;"><br/></span></p><p class="m-size-18 size-22"><a href="https://cdn.website-editor.net/71f4d987307d4a71adfb410c2d30359c/files/uploaded/Filmplakat.jpg" target="_blank" runtime_url="https://cdn.website-editor.net/71f4d987307d4a71adfb410c2d30359c/files/uploaded/Filmplakat.jpg" file="true" style="display: initial;" class="m-font-size-18 font-size-22">Filmplakat<br/></a></p><p class="m-size-18 size-22"><a href="https://cdn.website-editor.net/71f4d987307d4a71adfb410c2d30359c/files/uploaded/Titelbild.jpg" target="_blank" runtime_url="https://cdn.website-editor.net/71f4d987307d4a71adfb410c2d30359c/files/uploaded/Titelbild.jpg" file="true" style="display: initial;" class="m-font-size-18 font-size-22">Titelbild<br/></a></p><p class="m-size-18 size-22"><a href="https://cdn.website-editor.net/71f4d987307d4a71adfb410c2d30359c/files/uploaded/Still_Radioaktiv.jpg" target="_blank" runtime_url="https://cdn.website-editor.net/71f4d987307d4a71adfb410c2d30359c/files/uploaded/Still_Radioaktiv.jpg" file="true" style="display: initial;" class="m-font-size-18 font-size-22">Still 1</a><span single-space="true" class="m-font-size-18 font-size-22" style="display: initial;"> <span class="m-font-size-18 font-size-22" style="display: initial;"></span> 
+</span><a href="https://cdn.website-editor.net/71f4d987307d4a71adfb410c2d30359c/files/uploaded/Still_Radioaktiv_2.jpg" target="_blank" runtime_url="https://cdn.website-editor.net/71f4d987307d4a71adfb410c2d30359c/files/uploaded/Still_Radioaktiv_2.jpg" file="true" class="m-font-size-18 font-size-22" style="display: initial;">Still 2</a><span single-space="true" class="m-font-size-18 font-size-22" style="display: initial;"> <span class="m-font-size-18 font-size-22" style="display: initial;"></span> 
+</span><a href="https://cdn.website-editor.net/71f4d987307d4a71adfb410c2d30359c/files/uploaded/Still_Juelich.jpg" target="_blank" runtime_url="https://cdn.website-editor.net/71f4d987307d4a71adfb410c2d30359c/files/uploaded/Still_Juelich.jpg" file="true" class="m-font-size-18 font-size-22" style="display: initial;">Still 3<br/></a></p><p class="m-size-18 size-22"><span style="display: initial;" class="m-font-size-18 font-size-22">Filmexpos&eacute; auf Anfrage</span></p><p><span style="display: initial;"><br/></span></p><p><span style="display: initial;"><br/></span></p></div> <div data-element-type="spacer" class="u_1032727453 dmSpacer" id="1032727453"></div> 
+ <div class="u_1833289030 dmDividerWrapper clearfix" id="1833289030" data-element-type="dDividerId" layout="divider-style-1" data-widget-version="2"><hr class="dmDivider" style="min-height: 2px; border:none; background:grey" id="1048048456"/></div> 
+ <div class="u_1422128950 dmNewParagraph" data-element-type="paragraph" id="1422128950" data-styletopreserve="{" background-image="" :=""><span style="font-weight:400;font-family:'Source Sans Pro';">&nbsp;</span>Impressum: Marvin Oppong Filmproduktion, Postfach 7389, D-53073 Bonn, E-Mail: info@einstrahlendesland.de, Tel./Fax: +49 228 2279910, USt-IdNr.: DE292363174 | Alle Rechte vorbehalten &copy; 2026 | <a runtime_url="http://einstrahlendesland.de/datenschutz" href="http://einstrahlendesland.de/datenschutz">Datenschutz</a><br/></div></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmFooterContainer"> <div id="fcontainer" class="f_hcontainer dmFooter p_hfcontainer"> <div dm:templateorder="250" class="dmFooterResp generalFooter" id="1943048428"> <div class="dmRespRow u_1472522769" style="text-align: center;" id="1472522769"> <div class="dmRespColsWrapper" id="1528715676"> <div class="dmRespCol small-12 medium-12 large-12" id="1477716553"> <div class="dmNewParagraph" data-element-type="paragraph" id="1386730199" style="transition: opacity 1s ease-in-out 0s;"><div style="margin-left: 40px;">Impressum: Marvin Oppong Filmproduktion, Postfach 7389, D-53073 Bonn, E-Mail: info@oppong.eu, Tel./Fax: +49 228 2279910, USt-IdNr.: DE292363174 | Alle Rechte vorbehalten &copy; 2019 | <a runtime_url="https://www.einstrahlendesland.de/datenschutz" href="https://www.einstrahlendesland.de/datenschutz">Datenschutz</a><br/></div></div> <div class="dmDividerWrapper clearfix u_1412754167" id="1412754167" layout="divider-style-1" data-element-type="dDividerId"><hr class="dmDivider" style="min-height: 2px; border:none; background:grey" id="1778968577"/></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div id="1236746004" dmle_extension="powered_by" data-element-type="powered_by" icon="https://www.einstrahlendesland.de/true" surround="false"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+    </div>
+</div>
+<!--  Add full CSS and Javascript before the close tag of the body if needed -->
+<!-- ========= JS Section ========= -->
+<script>
+    var isWLR = true;
+
+    window.customWidgetsFunctions = {};
+    window.customWidgetsStrings = {};
+    window.collections = {};
+    window.currentLanguage = "GERMAN"
+    window.isSitePreview = false;
+</script>
+<script type="text/javascript">
+
+    var d_version = "production_6259";
+    var build = "2026-03-10T09_50_23";
+    window['v' + 'ersion'] = d_version;
+
+    function buildEditorParent() {
+        window.isMultiScreen = true;
+        window.editorParent = {};
+        window.previewParent = {};
+        window.assetsCacheQueryParam = "?version=2026-03-10T09_50_23";
+        try {
+            var _p = window.parent;
+            if (_p && _p.document && _p.$ && _p.$.dmfw) {
+                window.editorParent = _p;
+            } else if (_p.isSitePreview) {
+                window.previewParent = _p;
+            }
+        } catch (e) {
+
+        }
+    }
+
+    buildEditorParent();
+</script>
+
+<!-- Load jQuery -->
+<script type="text/javascript" id='d-js-jquery'
+        src="../static-cdn.website-editor.net/libs/jquery/jquery-3.7.0.min.js"></script>
+<!-- End Load jQuery -->
+<!-- Injecting site-wide before scripts -->
+<!-- End Injecting site-wide to the head -->
+
+
+<script>
+    var _jquery = window.$;
+
+    var jqueryAliases = ['$', 'jquery', 'jQuery'];
+
+    jqueryAliases.forEach((alias) => {
+        Object.defineProperty(window, alias, {
+            get() {
+                return _jquery;
+            },
+            set() {
+                console.warn("Trying to over-write the global jquery object!");
+            }
+        });
+    });
+    window.jQuery.migrateMute = true;
+</script>
+<script>
+    window.cookiesNotificationMarkupPreview = ' <div> <p class=\"rteBlock\">Diese Webseite verwendet Cookies, um Ihnen ein optimales Online-Erlebnis bieten zu k&ouml;nnen. Durch die Nutzung dieser Webseite erkl&auml;ren Sie sich mit der Verwendung von Cookies einverstanden. <a value=\"http:\/\/einstrahlendesland.de\/datenschutz\" type=\"url\" href=\"http:\/\/einstrahlendesland.de\/datenschutz\" data-runtime-url=\"http:\/\/einstrahlendesland.de\/datenschutz\">Mehr Infos.<\/a> \n<\/p> \n<\/div> \n';
+</script>
+
+<!-- HEAD RT JS Include -->
+<script id='d-js-params'>
+    window.INSITE = window.INSITE || {};
+    window.INSITE.device = "desktop";
+
+    window.rtCommonProps = {};
+    rtCommonProps["rt.ajax.ajaxScriptsFix"] =true;
+    rtCommonProps["rt.pushnotifs.sslframe.encoded"] = 'aHR0cHM6Ly97c3ViZG9tYWlufS5wdXNoLW5vdGlmcy5jb20=';
+    rtCommonProps["runtimecollector.url"] = 'https://rtc.website-editor.net';
+    rtCommonProps["performance.tabletPreview.removeScroll"] = 'false';
+    rtCommonProps["inlineEditGrid.snap"] =true;
+    rtCommonProps["popup.insite.cookie.ttl"] = '0.5';
+    rtCommonProps["rt.pushnotifs.force.button"] =true;
+    rtCommonProps["common.mapbox.token"] = '';
+    rtCommonProps["common.mapbox.js.override"] =false;
+    rtCommonProps["common.here.appId"] = 'iYvDjIQ2quyEu0rg0hLo';
+    rtCommonProps["common.here.appCode"] = '1hcIxLJcbybmtBYTD9Z1UA';
+    rtCommonProps["isCoverage.test"] =false;
+    rtCommonProps["ecommerce.ecwid.script"] = 'https://app.multiscreenstore.com/script.js';
+    rtCommonProps["common.resources.dist.cdn"] =true;
+    rtCommonProps["common.build.dist.folder"] = 'production/6259';
+    rtCommonProps["common.resources.cdn.host"] = 'https://static-cdn.website-editor.net';
+    rtCommonProps["common.resources.folder"] = 'https://static-cdn.website-editor.net/mnlt/production/6259';
+    rtCommonProps["feature.flag.runtime.backgroundSlider.preload.slowly"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.jitAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.sites.google.analytics.gtag"] =true;
+    rtCommonProps["feature.flag.runOnReadyNewTask"] =true;
+    rtCommonProps["isAutomation.test"] =false;
+    rtCommonProps["booking.cal.api.domain"] = 'api.cal.com';
+
+    
+    rtCommonProps['common.mapsProvider'] = 'mapbox';
+    
+    rtCommonProps['common.mapsProvider.version'] = '0.52.0';
+    rtCommonProps['common.geocodeProvider'] = 'mapbox';
+    rtCommonProps['server.for.resources'] = '';
+    rtCommonProps['feature.flag.lazy.widgets'] = false;
+    rtCommonProps['feature.flag.single.wow'] = false;
+    rtCommonProps['feature.flag.disallowPopupsInEditor'] = true;
+    rtCommonProps['feature.flag.mark.anchors'] = true;
+    rtCommonProps['captcha.public.key'] = '6LffcBsUAAAAAMU-MYacU-6QHY4iDtUEYv_Ppwlz';
+    rtCommonProps['captcha.invisible.public.key'] = '6LeiWB8UAAAAAHYnVJM7_-7ap6bXCUNGiv7bBPME';
+    rtCommonProps["images.sizes.small"] =160;
+    rtCommonProps["images.sizes.mobile"] =640;
+    rtCommonProps["images.sizes.tablet"] =1280;
+    rtCommonProps["images.sizes.desktop"] =1920;
+    rtCommonProps["modules.resources.cdn"] =true;
+    rtCommonProps["import.images.storage.imageCDN"] = 'https://le-cdn.website-editor.net/';
+    rtCommonProps["feature.flag.runtime.inp.threshold"] =150;
+    rtCommonProps["feature.flag.performance.logs"] =true;
+    rtCommonProps["site.widget.form.captcha.type"] = 'g_recaptcha';
+    rtCommonProps["friendly.captcha.site.key"] = 'FCMGSQG9GVNMFS8K';
+    rtCommonProps["cookiebot.mapbox.consent.category"] = 'marketing';
+    // feature flags that's used out of runtime module (in  legacy files)
+    rtCommonProps["platform.monolith.personalization.dateTimeCondition.popupMsgAction.moveToclient.enabled"] =true;
+
+    window.rtFlags = {};
+    rtFlags["unsuspendEcwidStoreOnRuntime.enabled"] =false;
+    rtFlags["scripts.widgetCount.enabled"] =true;
+    rtFlags["fnb.animations.tracking.enabled"] =true;
+    rtFlags["ecom.ecwidNewUrlStructure.enabled"] = false;
+    rtFlags["ecom.ecwid.accountPage.emptyBaseUrl.enabled"] = true;
+    rtFlags["ecom.ecwid.pages.links.disable.listeners"] = true;
+    rtFlags["ecom.ecwid.storefrontV3.enabled"] = false;
+    rtFlags["ecom.ecwid.old.store.fix.facebook.share"] = true;
+    rtFlags["feature.flag.photo.gallery.exact.size"] =true;
+    rtFlags["geocode.search.localize"] =false;
+    rtFlags["feature.flag.runtime.newAnimation.asyncInit.setTimeout.enabled"] =false;
+    rtFlags["twitter.heightLimit.enabled"] = true;
+    rtFlags["runtime.lottieOverflow"] =false;
+    rtFlags["runtime.monitoring.sentry.ignoreErrors"] = "";
+    rtFlags["streamline.monolith.personalization.supportMultipleConditions.enabled"] =false;
+    rtFlags["flex.animation.design.panel.layout"] =true;
+    rtFlags["runtime.cwv.report.cls.enabled"] =false;
+    rtFlags["runtime.cwv.report.lcp.enabled"] =false;
+    rtFlags["contact.form.useActiveForm"] =true;
+    rtFlags["contact.form.custom.errors.enabled"] =false;
+    rtFlags["runtime.ssr.productStore.internal.observer"] =true;
+    rtFlags["runtime.ssr.productCustomizations"] =true;
+    rtFlags["runtime.ssr.runtime.filter-sort.newFilterSortWidgetWithOptions.enabled"] =true;
+    rtFlags["runtime.ssr.ssrSlider.jumpThreshold.enabled"] =true;
+</script>
+<script src="../static-cdn.website-editor.net/mnlt/production/6259/_dm/s/rt/dist/scripts/d-js-one-runtime-unified-desktop.min.js"  id="d-js-core"></script>
+<!-- End of HEAD RT JS Include -->
+<script src="../static-cdn.website-editor.net/mnlt/production/6259/_dm/s/rt/dist/scripts/d-js-jquery-migrate.min.js" ></script>
+<script>
+    
+    $(window).bind("orientationchange", function (e) {
+        $.layoutManager.initLayout();
+        
+    });
+    $(document).resize(function () {
+        
+    });
+</script>
+<script type="text/javascript" id="d_track_campaign">
+(function() {
+    if (!window.location.search) {
+        return;
+    }
+	const cleanParams = window.location.search.substring(1); // Strip ?
+	const queryParams = cleanParams.split('&');
+
+	const expires = 'expires=' + new Date().getTime() + 24 * 60 * 60 * 1000;
+	const domain = 'domain=' + window.location.hostname;
+	const path = "path=/";
+
+	queryParams.forEach((param) => {
+		const [key, value = ''] = param.split('=');
+		if (key.startsWith('utm_')) {
+			const cookieName = "_dm_rt_" + key.substring(4);
+			const cookie = cookieName + "=" + value;
+			const joined = [cookie, expires, domain, path].join(";");
+			document.cookie = joined;
+		}
+	});
+}());
+</script>
+<script type="text/javascript" >
+  var _dm_gaq = {};
+  var _gaq = _gaq || [];
+  var _dm_insite = [];
+</script>
+
+<script type="text/javascript" id="d_track_sp">
+;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+};p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","//d1dxoqu0t5mb7j.cloudfront.net/sp-2.0.0-dm-0.1.min.js","snowplow"));
+window.dmsnowplow  = window.snowplow;
+
+dmsnowplow('newTracker', 'cf', 'd1dxoqu0t5mb7j.cloudfront.net', { // Initialise a tracker
+  appId: '71f4d987307d4a71adfb410c2d30359c'
+});
+
+// snowplow queries element styles so we wait until CSS calculations are done.
+requestAnimationFrame(() => {
+	dmsnowplow('trackPageView');
+	_dm_insite.forEach((rule) => {
+		// Specifically in popup only the client knows if it is shown or not so we don't always want to track its impression here
+		// the tracking is in popup.js
+		if (rule.actionName !== "popup") {
+			dmsnowplow('trackStructEvent', 'insite', 'impression', rule.ruleType, rule.ruleId);
+		}
+		window?.waitForDeferred?.('dmAjax', () => {
+			$.DM.events.trigger('event-ruleTriggered', {value: rule});
+		});
+	});
+});
+</script>
+   <div style="display:none;" id="P6iryBW0Wu"></div>
+
+<!-- photoswipe markup -->
+
+
+
+
+
+
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Schließen (ESC)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Teilen"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Vollbild ein-/ausschalten"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Vergrößern/verkleinern"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Zurück (Pfeil nach links)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Weiter (Pfeil nach rechts)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div id="fb-root"
+        data-locale="de_DE"></div>
+<!-- Alias: 71f4d987307d4a71adfb410c2d30359c -->
+<div class="dmPopupMask" id="dmPopupMask"></div>
+<div id="dmPopup" class="dmPopup">
+	<div class="dmPopupCloseWrapper"> <div class="dmPopupClose dm-common-icons-close oneIcon" onclick="dmHidePopup(event);"></div> </div>
+ 	<div class="dmPopupTitle"> <span></span> Share by:</div> 
+	<div class="data"></div>
+</div><script id="d_track_personalization">
+	window?.waitForDeferred?.('dmAjax', () => {
+		// Collects client data and updates cookies used by smart sites
+		window.expireDays = 365;
+		window.visitLength = 30 * 60000;
+		$.setCookie("dm_timezone_offset", (new Date()).getTimezoneOffset(), window.expireDays);
+			setSmartSiteCookiesInternal("dm_this_page_view","dm_last_page_view","dm_total_visits","dm_last_visit");
+	});
+</script>
+<script type="text/javascript">
+    
+    Parameters.NavigationAreaParams.MoreButtonText = '......';
+    
+    Parameters.NavigationAreaParams.LessButtonText = '......';
+    Parameters.HomeLinkText = 'Home';
+    </script>
+<!--  End Script tags -->
+<!--  Site Wide Html Markup -->
+<!--  Site Wide Html Markup -->
+</body>
+</html>
