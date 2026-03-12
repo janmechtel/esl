@@ -1,4 +1,4 @@
 # Sitemap is also available on /sitemap.xml
-Sitemap: https://www.einstrahlendesland.de/sitemap.xml
+Sitemap: /sitemap.xml
 User-agent: *
 
